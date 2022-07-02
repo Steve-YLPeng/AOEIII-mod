@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<submodel>
+		constrution_stage1
+		<component>
+			construction
+			<assetreference type="GrannyModel">
+				<file>units\mercenaries\swiss_pikeman\swiss_pikeman</file>
+				<replacetexture>
+					<from>units\mercenaries\swiss_pikeman\swiss_pikeman</from>
+					<to>units\swiss_pikeman2</to>
+				</replacetexture>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\explorer\knockout_idle</file>
+			</assetreference>
+			<component>construction</component>
+		</anim>
+	</submodel>
+	<submodel>
+		med_age3
+		<component>
+			spc_fort_center
+			<assetreference type="GrannyModel">
+				<file>units\mercenaries\swiss_pikeman\swiss_pikeman2</file>
+				<replacetexture>
+					<from>units\mercenaries\swiss_pikeman\swiss_pikeman</from>
+					<to>units\swiss_pikeman2</to>
+				</replacetexture>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\SPC\Morgan\idle</file>
+			</assetreference>
+			<component>spc_fort_center</component>
+			<attach a="pikes" frombone="bone_sword" tobone="BIP01 PROP1" syncanims="1"/>
+			<attach a="shield" frombone="bone_shield" tobone="L FOREARM" syncanims="0"/>
+		</anim>
+	</submodel>
+	<component>
+		test
+		<logic type="BuildingCompletion">
+			<p0>
+				<submodelref ref="constrution_stage1"/>
+			</p0>
+			<p100>
+				<submodelref ref="med_age3"/>
+			</p100>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>test</component>
+	</anim>
+</animfile>

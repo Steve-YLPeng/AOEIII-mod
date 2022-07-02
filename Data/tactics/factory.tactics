@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="43294">AutoGatherCoin</name>
+		<type>AutoGather</type>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43295">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43296">AutoGatherWood</name>
+		<type>AutoGather</type>
+		<active>1</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43297">SpawnCannon</name>
+		<type>Maintain</type>
+		<rate type="Cannon">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43297">SpawnCatapult</name>
+		<type>Maintain</type>
+		<rate type="AFRICANcatapult">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43298">SpawnRocket</name>
+		<type>Maintain</type>
+		<rate type="Rocket">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43299">SpawnBombard</name>
+		<type>Maintain</type>
+		<rate type="GreatBombard">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43299">SpawnLilBombard</name>
+		<type>Maintain</type>
+		<rate type="MercGreatCannon">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43299">SpawnParrott</name>
+		<type>Maintain</type>
+		<rate type="NAparrott">1.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="43299">SpawnNordenfelt</name>
+		<type>Maintain</type>
+		<rate type="WOLNordenfeltGun">1.0</rate>
+		<active>0</active>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<name stringid="69182">SpawnCanadianTrees</name>
+		<type>Maintain</type>
+		<rate type="TreeCanadian">3.0 </rate>
+		<active>0</active>
+		<persistent>1</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<tactic>
+		Normal
+		<action>SpawnCanadianTrees</action>
+		<action>AutoGatherCoin</action>
+		<active>1</active>
+		<transition>
+			<tactic>Food</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Wood</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Cannon</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+	<tactic>
+		Food
+		<action>SpawnCanadianTrees</action>
+		<action>AutoGatherFood</action>
+		<active>1</active>
+		<transition>
+			<tactic>Normal</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Wood</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Cannon</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+	<tactic>
+		Wood
+		<action>SpawnCanadianTrees</action>
+		<action>AutoGatherWood</action>
+		<active>1</active>
+		<transition>
+			<tactic>Normal</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Food</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Cannon</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+	<tactic>
+		Cannon
+		<action>SpawnCanadianTrees</action>
+		<action>SpawnCatapult</action>
+		<action>SpawnCannon</action>
+		<action>SpawnRocket</action>
+		<action>SpawnBombard</action>
+		<action>SpawnLilBombard</action>
+		<action>SpawnParrott</action>
+		<action>SpawnNordenfelt</action>
+		<active>1</active>
+		<transition>
+			<tactic>Normal</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Food</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+		<transition>
+			<tactic>Wood</tactic>
+			<length>2</length>
+			<exit>1</exit>
+		</transition>
+	</tactic>
+</tactics>

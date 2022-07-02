@@ -1,0 +1,64 @@
+<!-- converted from XMB to XML -->
+
+<impacteffect metercount="8" meterlength="1.0">
+	<wood fireexisttime="3000">
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</wood>
+	<stone>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</stone>
+	<flesh>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</flesh>
+	<dirt>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</dirt>
+	<snow>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</snow>
+	<animal>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</animal>
+	<terraingrass>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</terraingrass>
+	<terrainwater>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</terrainwater>
+	<terraindirt>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</terraindirt>
+	<terrainstone>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</terrainstone>
+	<terrainsnow>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</terrainsnow>
+	<terrainsand>
+		<particleset>holyblow</particleset>
+		<soundset>DeathbyCondemn</soundset>
+		<soundset>HoopImpact</soundset>
+	</terrainsand>
+</impacteffect>

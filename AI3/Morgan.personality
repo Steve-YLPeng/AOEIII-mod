@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>25278</nameID>
+   <tooltipID>25278</tooltipID>
+   <forcedciv>SPCAct1</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>ui\\singleplayer\\cpai_avatar_act1</icon>
+   <chatset>napoleon</chatset>
+   <playerNames>
+      <nameID>25278<civ>SPCAct1</civ></nameID> 
+	</playerNames>
+</AI>

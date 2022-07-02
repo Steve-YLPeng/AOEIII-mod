@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_club</definebone>
+	<definebone>bone_axe</definebone>
+	<definebone>axe</definebone>
+	<!-- <attachment>
+		club
+		<component>
+			club
+			<assetreference type="GrannyModel">
+				<file>units\natives\ally\zapotec_lightning_warrior\zapotec_lightning_warrior_club</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>club</component>
+		</anim>
+	</attachment> -->
+	<!-- <attachment>
+		club
+		<component>
+			club
+			<assetreference type="GrannyModel">
+				<file>units\natives\attachment_nootka_club</file>
+				<replacetexture>
+					<from>units\natives\clubman</from>
+					<to>units\clubman</to>
+				</replacetexture>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>club</component>
+		</anim>
+	</attachment> -->
+	<attachment>
+		club
+		<component>
+			club
+			<assetreference type="GrannyModel">
+				<file>units\natives\aztec\war_chief\aztec_warchief_club</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>club</component>
+		</anim>
+	</attachment>
+	<component>
+		axe
+		<logic type="Tech">
+			<none>
+				<assetreference type="GrannyModel">
+					<file>units\natives\aztec\skull_knight\skull_knight_axe</file>
+				</assetreference>
+				<attach a="club" frombone="bone_club" tobone="bone_axe" syncanims="0"/>
+			</none>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>axe</component>
+	</anim>
+</animfile>

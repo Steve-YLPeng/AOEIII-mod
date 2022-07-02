@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<component>
+		shield
+		<logic type="Tech">
+			<none>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>units\natives\attachment_holcan_shield</file>
+							<replacetexture>
+								<from>units\natives\holcan_spearman</from>
+								<to>units\DarkRider\DarkRider_shield1</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+					<lowpoly/>
+				</logic>
+			</none>
+			<GuardDarkRider>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>units\natives\attachment_holcan_shield</file>
+							<replacetexture>
+								<from>units\natives\holcan_spearman</from>
+								<to>units\DarkRider\DarkRider_shield2</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+					<lowpoly/>
+				</logic>
+			</GuardDarkRider>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>shield</component>
+	</anim>
+</animfile>

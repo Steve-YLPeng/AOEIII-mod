@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>Bone_rt_foot</definebone>
+	<definebone>Bone_lt_foot</definebone>
+	<component>
+		cat
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>units\animals\tiger\tiger_0</file>
+						<replacetexture>
+							<from>units\animals\tiger\Tiger_Color</from>
+							<to>War of the Triple Alliance\Units\Animals\Cat\cat_black_and_white</to>
+						</replacetexture>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>units\animals\tiger\tiger_0</file>
+						<replacetexture>
+							<from>units\animals\tiger\Tiger_Color</from>
+							<to>War of the Triple Alliance\Units\Animals\Cat\cat_black</to>
+						</replacetexture>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>units\animals\tiger\tiger_0</file>
+						<replacetexture>
+							<from>units\animals\tiger\Tiger_Color</from>
+							<to>War of the Triple Alliance\Units\Animals\Cat\cat_white</to>
+						</replacetexture>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>units\animals\tiger\tiger_0</file>
+						<replacetexture>
+							<from>units\animals\tiger\Tiger_Color</from>
+							<to>War of the Triple Alliance\Units\Animals\Cat\cat_ginger</to>
+						</replacetexture>
+				</assetreference>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>units\animals\tiger\tiger_0</file>
+						<replacetexture>
+							<from>units\animals\tiger\Tiger_Color</from>
+							<to>War of the Triple Alliance\Units\Animals\Cat\cat_tabby</to>
+						</replacetexture>
+				</assetreference>
+			</data>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+			<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+			<width>1.0</width>
+			<height>2.00</height>
+		</decal>
+	</component>
+	<anim>
+		HandAttack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_attackA</file>
+			<tag type="Attack">0.20</tag>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		MeleeHandAttack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_attackA</file>
+			<tag type="Attack">0.20</tag>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		CoverHandAttack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_attackA</file>
+			<tag type="Attack">0.20</tag>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		DefendHandAttack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_attackA</file>
+			<tag type="Attack">0.20</tag>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		Charge_Attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_attackA</file>
+			<tag type="Attack">0.20</tag>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_idleA</file>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_deathA</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.73</tag>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_walkA</file>
+			<tag type="FootstepLeft" footprinttype="AnimalLeft" footprintbone="BONE_LT_FOOT">0.13</tag>
+			<tag type="FootstepRight" footprinttype="AnimalRight" footprintbone="BONE_RT_FOOT">0.56</tag>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_boredA</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_boredB</file>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		Treebent_Idle
+		<assetreference type="GrannyAnim">
+			<file>units\animals\tiger\tiger_treebent_idle01</file>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		Treebent_exit
+		<assetreference type="GrannyAnim">
+			<file>animation_library\quads\cougar_idleA</file>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		Wagon_Idle01
+		<assetreference type="GrannyAnim">
+			<file>units\animals\lion\wolf_wagon_wolfa_idle1</file>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+	<anim>
+		Wagon_Exit01
+		<assetreference type="GrannyAnim">
+			<file>units\animals\lion\wolf_wagon_wolfa_exit</file>
+		</assetreference>
+		<component>cat</component>
+	</anim>
+</animfile>

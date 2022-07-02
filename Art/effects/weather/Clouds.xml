@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<attachment>
+		Emitter2
+		<component>
+			emitter2
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\WOTTAclouds.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter2</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Emitter3
+		<component>
+			emitter3
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\WOTTAclouds.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter3</component>
+		</anim>
+	</attachment>
+	<component>
+		mesh
+		<assetreference type="GrannyModel" shape="blarg">
+			<file>effects\FXdummy</file>
+		</assetreference>
+	</component>
+	<anim>
+		Idle
+		<component>mesh</component>
+		<attach a="Emitter2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Emitter3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</anim>
+</animfile>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="70308">FlameAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Bombard_ranged_attack</anim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>1.0</unintentionaldamagemultiplier>
+		<impacteffect>effects\impacts\torch</impacteffect>
+		<rate type="All">1.0 </rate>
+		<perfectaccuracy>1</perfectaccuracy>
+	</action>
+	
+	<tactic>
+		Volley
+		<action priority="75">FlameAttack</action>
+		<action priority="70">VolleyRangedAttack</action>
+		<action>JFS</action>
+		<action>JFS2</action>
+		<action>BoatManager</action>
+		<action>BoatManager2</action>
+		<!-- <action>Move</action> -->
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<autoretarget>1</autoretarget>
+		<throw>1</throw>
+		<exclusive>1</exclusive>
+		<!-- <deathanim>Walk</deathanim>
+		<idleanim>Walk</idleanim>
+		<boredanim>Walk</boredanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Walk</joganim>
+		<runanim>Walk</runanim> -->
+	</tactic>
+</tactics>

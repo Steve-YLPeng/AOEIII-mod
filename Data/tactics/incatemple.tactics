@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="48958">IncaAura2</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>1.05</modifymultiplier>
+		<modelattachment>War of the Triple Alliance\Units\Inca\incaaura.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="69776">Spawn</name>
+		<type>Maintain</type>
+		<rate type="MancoHorseman">1.0</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="69776">Spawn2</name>
+		<type>Maintain</type>
+		<rate type="MancoHorseman">2.0</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<action>
+		<name stringid="69776">Spawn3</name>
+		<type>Maintain</type>
+		<rate type="MancoHorseman">3.0</rate>
+		<active>1</active>
+		<persistent>0</persistent>
+		<singleuse>1</singleuse>
+	</action>
+	<tactic>
+		Normal
+		<action>IncaAura2</action>
+		<action>Spawn</action>
+		<action>Spawn2</action>
+		<action>Spawn3</action>
+	</tactic>
+</tactics>

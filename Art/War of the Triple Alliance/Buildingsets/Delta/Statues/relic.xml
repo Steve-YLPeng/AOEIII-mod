@@ -1,0 +1,24 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		props_colony
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Buildingsets\Delta\Statues\relic</file>
+				</assetreference>
+			</data>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\selection_circle_32x32</selectedtexture>
+			<width>1.50</width>
+			<height>1.50</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>props_colony</component>
+	</anim>
+</animfile>

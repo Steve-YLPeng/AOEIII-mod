@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animfile>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>effects\projectiles\arrow</file>
+			<replacetexture>
+				<from>effects\projectiles\arrow</from>
+				<to>units\swordarrow</to>
+			</replacetexture>
+		</assetreference>
+		
+	</component>
+	<anim>
+		Idle
+		<component>ModelComp</component>
+	</anim>
+</animfile>
+<!-- <animfile>
+	<definebone>dynamite</definebone>
+	<definebone>bone_master</definebone>
+	<definebone>sword</definebone>
+	<definebone>hotDog</definebone>
+	<definebone>bone_hotDog</definebone>
+	<attachment>
+		sword
+		<component>
+			sword
+			<assetreference type="GrannyModel">
+				<file>units\attachments\rapier.gr2</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>sword</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>effects\projectiles\dynamite</file>
+			<replacetexture>
+				<from>units\spc\miner\miner</from>
+				<to>units\swordarrow2</to>
+			</replacetexture>
+		</assetreference>
+	</component>
+	<anim>
+		Idle
+		<component>ModelComp</component>
+		<attach a="sword" frombone="bone_master" tobone="dynamite" syncanims="0"/>
+	</anim>
+</animfile> -->

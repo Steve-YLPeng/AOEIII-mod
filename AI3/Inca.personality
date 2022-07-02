@@ -1,0 +1,13 @@
+<AI>
+   <version>2</version>
+   <script>aiLoaderStandard</script>
+   <nameID>602291</nameID>
+   <tooltipID>602291</tooltipID>
+   <forcedciv>Tawantinsuyu</forcedciv>
+   <rushboom>-1</rushboom>
+   <icon>WoL\ui\singleplayer\cpai_avatar_inca-sm</icon>
+   <chatset>gall</chatset>
+   <playerNames>
+      <nameID>602291<civ>Tawantinsuyu</civ></nameID> 
+	</playerNames>
+</AI>

@@ -1,0 +1,90 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<attachment>
+		attachment_forest_fire
+		<component>
+			forest_fire
+			<assetreference type="ParticleSystem">
+				<file>effects\forest_fire\forest_fire.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>forest_fire</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_forest_fire_smoke
+		<component>
+			forest_fire_smoke
+			<assetreference type="ParticleSystem">
+				<file>effects\forest_fire\forest_fire_smoke.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>forest_fire_smoke</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_forest_fire_embers
+		<component>
+			forest_fire_embers
+			<assetreference type="ParticleSystem">
+				<file>effects\forest_fire\forest_fire_embers.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>forest_fire_embers</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_forest_fire_sparks
+		<component>
+			forest_fire_sparks
+			<assetreference type="ParticleSystem">
+				<file>effects\forest_fire\forest_fire_sparks.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>forest_fire_sparks</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_forest_fire_base
+		<component>
+			forest_fire_base
+			<assetreference type="ParticleSystem">
+				<file>effects\forest_fire\forest_fire_base.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>forest_fire_base</component>
+		</anim>
+	</attachment>
+	<component>
+		forest_fire
+		<assetreference type="GrannyModel">
+			<file>buildings\spc\fixed_gun\fixed_gun_rangedAttack</file>
+		</assetreference>
+		<watersplash>
+			<texture>effects\projectiles\cannonball_splash</texture>
+			<width>3.50</width>
+			<height>3.50</height>
+		</watersplash>
+	</component>
+	<anim>
+		Idle
+		<component>forest_fire</component>
+		<attach a="attachment_forest_fire_base" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<tag type="CameraShake" force="0.09" duration="5.0">0.00</tag>
+	</anim>
+	<anim>
+		Death
+		<component>forest_fire</component>
+	</anim>
+</animfile>

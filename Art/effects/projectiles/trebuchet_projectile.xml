@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<attachment>
+		attachment_cannon_ball_trail
+		<component>
+			cannon_ball_trail
+			<assetreference type="ParticleSystem">
+				<file>effects\projectiles\cannon_ball_trail.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_ball_trail</component>
+		</anim>
+	</attachment>
+	<attachment>
+		fire
+		<component>
+			fire emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\fire_torch_a.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>fire emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		fire_base
+		<component>
+			fire_base
+			<assetreference type="ParticleSystem">
+				<file>War of the Triple Alliance\Delta\African Animals\bases\300</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>fire_base</component>
+			<attach a="fire" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+		</anim>
+	</attachment>
+	<attachment>
+		streamer
+		<component>
+			trail emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\projectiles\flamingArrow_trail.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>trail emitter</component>
+		</anim>
+	</attachment>
+	<component>
+		ball
+		<assetreference type="GrannyModel">
+			<file>effects\projectiles\great_bombard_ball</file>
+			<replacetexture>
+				<from>effects\projectiles\cannonball</from>
+				<to>effects\projectiles\lava</to>
+			</replacetexture>
+		</assetreference>
+		<watersplash>
+			<texture>effects\projectiles\cannonball_splash</texture>
+			<width>3.5</width>
+			<height>3.5</height>
+		</watersplash>
+	</component>
+	<anim>
+		Idle
+		<component>ball</component>
+		<attach a="attachment_cannon_ball_trail" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="fire" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="streamer" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</anim>
+</animfile>

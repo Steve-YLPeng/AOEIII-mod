@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+<definebone>bone_travois</definebone>
+	<attachment>
+		Chilche
+		<include>units\spc\chilche_old\igc_chilche_old.xml</include>
+	</attachment>
+	<component>
+		travois
+		<logic type="LowPoly">
+			<normal>
+				<assetreference type="GrannyModel">
+					<file>units\trade\indian_travois\aztec_travois</file>
+								<replacetexture>
+									<from>units\trade\indian_travois\all_travios</from>
+									<to>War of the Triple Alliance\Units\Inca\travois</to>
+								</replacetexture>
+								<replacetexture>
+									<from>units\trade\indian_travois\all_travios_b</from>
+									<to>War of the Triple Alliance\Units\Inca\travois_b</to>
+								</replacetexture>
+				</assetreference>
+			<attach a="Chilche" frombone="attachpoint" tobone="bone_travois" syncanims="0"/>
+			</normal>
+			<lowpoly>
+				<assetreference type="GrannyModel">
+					<file>units\trade\indian_travois\aztec_travois</file>
+				</assetreference>
+			</lowpoly>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_128x128</texture>
+			<selectedtexture>shadows_selections\selection_oval_64x128</selectedtexture>
+			<width>2.00</width>
+			<height>4.00</height>
+		</decal>
+	</component>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>units\trade\indian_travois\aztec_travois_ani\walk</file>
+		</assetreference>
+		<component>travois</component>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>units\trade\indian_travois\aztec_travois_ani\idle</file>
+		</assetreference>
+		<component>travois</component>
+	</anim>
+	<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>units\trade\indian_travois\aztec_travois_ani\death</file>
+			</assetreference>
+			<component>az_travois</component>
+		</anim>
+</animfile>

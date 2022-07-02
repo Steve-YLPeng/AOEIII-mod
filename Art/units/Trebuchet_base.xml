@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>Bone01</definebone>
+	<definebone>Bip01 Prop1</definebone>
+	<definebone>Bip01 Prop2</definebone>
+	<definebone>bone_wheel03</definebone>
+    <definebone>bone_wheel04</definebone>
+    <definebone>bone_wagon</definebone>
+    <definebone>bone01</definebone>
+    <definebone>bone02</definebone>
+    <definebone>bone03</definebone>
+    <definebone>bone04</definebone>
+    <definebone>bone05</definebone>
+	<attachment>
+		Rider
+		<include>units\KnB\Trebuchet\Trebuchet_wol.xml</include>
+	</attachment>
+	<component>
+		Trebuchet_Packed
+		<assetreference type="GrannyModel">
+			<file>War of the Triple Alliance\Delta\African Animals\bases\90</file>
+		</assetreference>
+		<decal>
+            <effecttype>default</effecttype>
+            <texture>shadows_selections\shadow_circle_128x128</texture>
+            <selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+            <width>2.00</width>
+            <height>4.00</height>
+        </decal>
+		<attach a="Rider" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+	</component>
+	<component>
+		Trebuchet_Unpacked
+		<assetreference type="GrannyModel">
+			<file>War of the Triple Alliance\Delta\African Animals\bases\70</file>
+		</assetreference>
+		<decal>
+            <effecttype>default</effecttype>
+            <texture>shadows_selections\shadow_circle_128x128</texture>
+            <selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+            <width>2.00</width>
+            <height>4.00</height>
+        </decal>
+		<attach a="Rider" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+	</component>
+	<component>
+		Trebuchet_Building
+		<assetreference type="GrannyModel">
+			<file>War of the Triple Alliance\Delta\African Animals\bases\70</file>
+		</assetreference>
+		<decal>
+            <effecttype>default</effecttype>
+            <texture>shadows_selections\shadow_circle_128x128</texture>
+            <selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+            <width>2.00</width>
+            <height>4.00</height>
+        </decal>
+		<attach a="Rider" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+	</component>
+	<component>
+		Trebuchet_Death
+		<assetreference type="GrannyModel">
+			<file>War of the Triple Alliance\Delta\African Animals\bases\70</file>
+		</assetreference>
+		<decal>
+            <effecttype>default</effecttype>
+            <texture>shadows_selections\shadow_circle_128x128</texture>
+            <selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+            <width>2.00</width>
+            <height>4.00</height>
+        </decal>
+		<attach a="Rider" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+	</component>
+	
+	<anim>
+        Idle
+        <assetreference type="GrannyAnim">
+            <file>units\trade\supply_cart\supply_cart_idle</file>
+        </assetreference>
+        <component>Trebuchet_Packed</component>
+    </anim>
+    <anim>
+        Walk
+        <assetreference type="GrannyAnim">
+            <file>units\trade\supply_cart\supply_cart_walk</file>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof1">0.14</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof2">0.26</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof3">0.38</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof4">0.51</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof1">0.64</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof2">0.77</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof3">0.90</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof4">0.03</tag>
+        </assetreference>
+        <component>Trebuchet_Packed</component>
+    </anim>
+    <anim>
+        Death
+        <assetreference type="GrannyAnim">
+            <file>animation_library\wagon\wagon_death</file>
+            <tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.50</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="CartBreak">0.03</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.04</tag>
+        </assetreference>
+        <component>Trebuchet_Packed</component>
+    </anim>
+    <anim>
+		Limber
+		<component>Trebuchet_Building</component>
+	</anim>
+	<anim>
+		Unlimber
+		<component>Trebuchet_Building</component>
+	</anim>
+    <anim>
+        Bombard_ranged_Idle
+        <component>Trebuchet_Unpacked</component>
+    </anim>
+    <anim>
+        Bombard_Reload
+        <component>Trebuchet_Unpacked</component>
+    </anim>
+    <anim>
+        Bombard_ranged_attack
+        <assetreference type="GrannyAnim">
+            <file>units\KnB\Trebuchet\trebuchet_shooting</file>
+            <tag type="Attack">0.84</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.02</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.24</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.50</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="Catapultattacks">0.82</tag>
+        </assetreference>
+        <component>Trebuchet_Unpacked</component>
+    </anim>
+    <anim>
+        Bombard_Death
+        <assetreference type="GrannyAnim">
+            <file>units\KnB\Trebuchet\trebuchet_destruction</file>
+        </assetreference>
+        <component>Trebuchet_Death</component>
+    </anim>
+</animfile>

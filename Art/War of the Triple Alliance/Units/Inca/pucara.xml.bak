@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_topEmitter</definebone>
+	<definebone>bone_bottomEmitter</definebone>
+	<definebone>bone_debris_1a</definebone>
+	<definebone>bone_debris_1b</definebone>
+	<definebone>bone_debris_1c</definebone>
+	<definebone>bone_debris_1d</definebone>
+	<definebone>bone_debris_1e</definebone>
+	<definebone>bone_debris_1f</definebone>
+	<definebone>bone_debris_1g</definebone>
+	<definebone>bone_debris_1h</definebone>
+	<definebone>bone_debris_2a</definebone>
+	<definebone>bone_debris_2b</definebone>
+	<definebone>bone_debris_2c</definebone>
+	<definebone>bone_debris_2d</definebone>
+	<definebone>bone_debris_2e</definebone>
+	<definebone>bone_debris_2f</definebone>
+	<definebone>bone_debris_2g</definebone>
+	<definebone>bone_debris_3a</definebone>
+	<definebone>bone_debris_3b</definebone>
+	<definebone>bone_debris_3c</definebone>
+	<definebone>bone_debris_3d</definebone>
+	<definebone>bone_debris_3e</definebone>
+	<definebone>bone_debris_3f</definebone>
+	<definebone>bone_debris_3g</definebone>
+	<definebone>bone_debris_3h</definebone>
+	<attachment>
+		base smoke
+		<component>
+			smoke base
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\collapsesmoke01.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke base</component>
+		</anim>
+	</attachment>
+	<attachment>
+		base smoke2
+		<component>
+			smoke wave
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\collapse_smoke_wave.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke wave</component>
+		</anim>
+	</attachment>
+	<attachment>
+		base smoke3
+		<component>
+			smoke wave center
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\collapse_smoke_wave02.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke wave center</component>
+		</anim>
+	</attachment>
+	<attachment>
+		collapse_smoke
+		<component>
+			collapse_smoke
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\collapse_smoke_a.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>collapse_smoke</component>
+		</anim>
+	</attachment>
+	<component>
+		temple
+		<logic type="Destruction">
+			<p1>
+				<assetreference type="GrannyModel" shape="spc_incanTemple">
+					<file>buildings\spc\inca_temple\spc_inca_temple_destroyed</file>
+				</assetreference>
+			</p1>
+			<p99>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel" shape="spc_incanTemple">
+							<file>buildings\spc\inca_temple\spc_inca_temple</file>
+						</assetreference>
+					</normal>
+					<lowpoly>
+						<assetreference type="GrannyModel" shape="spc_incanTemple">
+							<file>buildings\spc\inca_temple\lp_spc_inca_temple</file>
+						</assetreference>
+					</lowpoly>
+				</logic>
+			</p99>
+		</logic>
+		<decal>
+			<effecttype>bump</effecttype>
+			<texture>buildings\spc\inca_temple\spc_inca_temple_ground</texture>
+			<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+			<bumptexture>buildings\spc\inca_temple\spc_inca_temple_ground_bumpmap</bumptexture>
+			<width>13.00</width>
+			<height>13.00</height>
+		</decal>
+	</component>
+	<component>
+		deathModel
+		<logic type="LowPoly">
+			<normal>
+				<assetreference type="GrannyModel">
+					<file>buildings\spc\inca_temple\spc_inca_temple_deathModel</file>
+				</assetreference>
+			</normal>
+			<lowpoly>
+				<assetreference type="GrannyModel">
+					<file>buildings\spc\inca_temple\lp_spc_inca_temple</file>
+				</assetreference>
+			</lowpoly>
+		</logic>
+		<decal>
+			<effecttype>bump</effecttype>
+			<texture>buildings\spc\inca_temple\spc_inca_temple_ground</texture>
+			<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+			<bumptexture>buildings\spc\inca_temple\spc_inca_temple_ground_bumpmap</bumptexture>
+			<width>13.00</width>
+			<height>13.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>temple</component>
+		<simskeleton>
+			<model>buildings\spc\inca_temple\spc_inca_temple_destroyed</model>
+			<damagetemplate>buildings\spc\inca_temple\spc_inca_temple.dmg</damagetemplate>
+		</simskeleton>
+		<attach a="WaterSpray_top" frombone="ATTACHPOINT" tobone="bone_topEmitter" syncanims="0"/>
+		<attach a="WaterSpray_bottom" frombone="ATTACHPOINT" tobone="bone_bottomEmitter" syncanims="0"/>
+		<attach a="WaterFall_column" frombone="ATTACHPOINT" tobone="bone_bottomEmitter" syncanims="0"/>
+		<attach a="WaterFall_ripples" frombone="ATTACHPOINT" tobone="bone_bottomEmitter" syncanims="0"/>
+		<attach a="fakeWater" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</anim>
+	<anim>
+			RangedAttack
+			<assetreference type="GrannyAnim">
+				<file>animation_library\building\ranged_attack</file>
+				<tag type="Attack">0.98</tag>
+				<tag type="SpecificSoundSet" checkvisible="1" set="Arrows">0.98</tag>
+			</assetreference>
+			<component>temple</component>
+			<simskeleton>
+				<model>buildings\spc\inca_temple\spc_inca_temple_destroyed</model>
+				<damagetemplate>buildings\spc\inca_temple\spc_inca_temple.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>buildings\spc\inca_temple\spc_inca_temple_deathAnim</file>
+		</assetreference>
+		<component>deathModel</component>
+		<attach a="base smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="base smoke2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="base smoke3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="collapse_smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</anim>
+</animfile>

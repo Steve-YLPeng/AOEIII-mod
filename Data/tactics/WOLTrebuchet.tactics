@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="28074">Attack</name>
+		<reloadanim>Bombard_Reload</reloadanim>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Bombard_ranged_attack</anim>
+		<idleanim>Bombard_ranged_idle</idleanim>
+		<boredanim>Bombard_ranged_idle</boredanim>
+		<maxheight>20</maxheight>
+		<accuracy>0.5</accuracy>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>1.0</unintentionaldamagemultiplier>
+		<projectile>TrebuchetProjectile</projectile>
+		<impacteffect>effects\impacts\cannon</impacteffect>
+		<rate type="All">1.0</rate>
+		<throw>1</throw>
+		<impactforcemin>50.0f</impactforcemin>
+		<impactforcemax>80.0f</impactforcemax>
+		<outerdamageareadistance>.25</outerdamageareadistance>
+		<outerdamageareafactor>.20</outerdamageareafactor>
+		<impactlaunchangle>45.0</impactlaunchangle>
+		<areasortmode>Directional</areasortmode>
+		<targetground>1</targetground>
+		<numberbounces>1</numberbounces>
+		<basedamagecap>1</basedamagecap>
+	</action>
+	<tactic>
+		Limber
+		<speedmodifier>1.0</speedmodifier>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<transition>
+			<tactic>Bombard</tactic>
+			<action>Limber</action>
+			<anim>Limber</anim>
+			<length>4</length>
+			<exit>1</exit>
+			<commandautomatic>1</commandautomatic>
+			<automatic>1</automatic>
+		</transition>
+		<deathanim>Death</deathanim>
+	</tactic>
+	<tactic>
+		Bombard
+		<speedmodifier>0</speedmodifier>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<exclusive>1</exclusive>
+		<action>Attack</action>
+		<transition>
+			<tactic>Limber</tactic>
+			<action>Limber</action>
+			<anim>Limber</anim>
+			<length>6</length>
+			<exit>1</exit>
+		</transition>
+		<idleanim>Bombard_ranged_idle</idleanim>
+		<boredanim>Bombard_ranged_idle</boredanim>
+		<walkanim>Bombard_ranged_idle</walkanim>
+		<joganim>Bombard_ranged_idle</joganim>
+		<runanim>Bombard_ranged_idle</runanim>
+		<throw>1</throw>
+		<deathanim>Bombard_Death</deathanim>
+	</tactic>
+</tactics>

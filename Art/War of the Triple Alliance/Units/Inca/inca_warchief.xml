@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+<definebone>bone_travois</definebone>
+	<attachment>
+		Chilche
+		<include>War of the Triple Alliance\Units\Inca\inca_sapa.xml</include>
+	</attachment>
+	<attachment>
+		Warchief_aura
+		<component>
+			aura
+			<notshadowcaster/>
+			<assetreference type="GrannyModel">
+				<file>units\natives\lakota\war_chief\sx_warchief_aura</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>aura</component>
+		</anim>
+	</attachment>
+
+	<component>
+		travois
+		<logic type="LowPoly">
+			<normal>
+				<assetreference type="GrannyModel">
+					<file>units\trade\indian_travois\aztec_travois</file>
+								<replacetexture>
+									<from>units\trade\indian_travois\all_travios</from>
+									<to>War of the Triple Alliance\Units\Inca\travois</to>
+								</replacetexture>
+								<replacetexture>
+									<from>units\villagers\az_villager_m</from>
+									<to>War of the Triple Alliance\Units\Inca\travoisman</to>
+								</replacetexture>
+								<replacetexture>
+									<from>units\villagers\az_villager_m_b</from>
+									<to>War of the Triple Alliance\Units\Inca\travoisman_b</to>
+								</replacetexture>
+				</assetreference>
+			<attach a="Chilche" frombone="attachpoint" tobone="bone_travois" syncanims="0"/>
+			</normal>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+			<selectedtexture>War of the Triple Alliance\Units\Inca\selection</selectedtexture>
+			<noncinematictexture>War of the Triple Alliance\Units\Inca\shadow</noncinematictexture>
+			<width>3.10</width>
+			<height>3.10</height>
+		</decal>
+	</component>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>units\trade\indian_travois\aztec_travois_ani\walk</file>
+		</assetreference>
+		<component>travois</component>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>units\trade\indian_travois\aztec_travois_ani\idle</file>
+		</assetreference>
+		<component>travois</component>
+	</anim>
+	<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>units\trade\indian_travois\aztec_travois_ani\death</file>
+			</assetreference>
+			<component>az_travois</component>
+		</anim>
+</animfile>

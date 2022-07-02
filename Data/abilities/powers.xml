@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<powers>
+	<power name="ypPowerShrineAura" type="UnitAction">
+		<displaynameid>70309</displaynameid>
+		<rolloverid>70310</rolloverid>
+		<icon>art\ui\techs\asians\tech_toshogu_passive_ability</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypUnitElephantSpeed" type="UnitAction">
+		<displaynameid>70135</displaynameid>
+		<rolloverid>70136</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_terror_charge_icon_64</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypUnitMansabdarAura" type="UnitAction">
+		<displaynameid>70185</displaynameid>
+		<rolloverid>70186</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_mansabdar_aura_icon_64</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypUnitDaimyoAura" type="UnitAction">
+		<displaynameid>69914</displaynameid>
+		<rolloverid>69915</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_daimyo_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypUnitShogunAura" type="UnitAction">
+		<displaynameid>69916</displaynameid>
+		<rolloverid>69917</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_shogun_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypUnitDiscipleAura" type="UnitAction">
+		<displaynameid>69918</displaynameid>
+		<rolloverid>69919</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_disciple_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypUnitFrightenAura" type="UnitAction">
+		<displaynameid>69920</displaynameid>
+		<rolloverid>69921</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_frighten_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypUnitScareAura" type="UnitAction">
+		<displaynameid>69922</displaynameid>
+		<rolloverid>69923</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_scare_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypPowerEconAura" type="UnitAction">
+		<displaynameid>69853</displaynameid>
+		<rolloverid>69854</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_econ_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypPowerMonkAura" type="UnitAction">
+		<displaynameid>69855</displaynameid>
+		<rolloverid>69856</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_monk_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypPowerDaimyoAura" type="UnitAction">
+		<displaynameid>69857</displaynameid>
+		<rolloverid>69858</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_military_training_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypPowerXPAura" type="UnitAction">
+		<displaynameid>69859</displaynameid>
+		<rolloverid>69860</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_xp_aura_icon_64</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypPowerAttackBlessing" type="AttackBlessing">
+		<displaynameid>65578</displaynameid>
+		<rolloverid>65579</rolloverid>
+		<icon>art\ui\abilities\ability_inspiration</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>15</activetime>
+		<effect type="MaximumVelocity" relativity="BasePercent" amount="1.1">
+			<target type="ProtoUnit">LogicalTypeLandMilitary</target>
+		</effect>
+		<effect type="HitPoints" relativity="BasePercent" amount="1.15">
+			<target type="ProtoUnit">LogicalTypeLandMilitary</target>
+		</effect>
+		<effect type="Damage" relativity="BasePercent" amount="1.15">
+			<target type="ProtoUnit">LogicalTypeLandMilitary</target>
+		</effect>
+		<placement forceonmap="1" ally="">full</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<soundset type="StartSound" listenertype="Caster">PowerInspiration</soundset>
+	</power>
+	<power name="ypPowerDivineBlow" type="UnitAction">
+		<displaynameid>64603</displaynameid>
+		<rolloverid>64604</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_kayakujutin_icon_64</icon>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerDivineStrike</startsoundset>
+	</power>
+	<power name="ypPowerStomp" type="UnitAction">
+		<displaynameid>64599</displaynameid>
+		<rolloverid>64600</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_stomp_elephant_icon_64</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerStomp</startsoundset>
+	</power>
+	<power name="ypPowerDodge" type="UnitAction">
+		<displaynameid>66381</displaynameid>
+		<rolloverid>66382</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_dodge_icon_64</icon>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerEvade</startsoundset>
+	</power>
+	<power name="ypPowerConvertDisciple" type="UnitAction">
+		<displaynameid>64601</displaynameid>
+		<rolloverid>64602</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_convert_disciple_icon_64</icon>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerConvertDisciple</startsoundset>
+	</power>
+	<power name="ypPowerCriticalAttack" type="UnitAction">
+		<displaynameid>64597</displaynameid>
+		<rolloverid>64598</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_critical_attack_icon_64</icon>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerCriticalStrike</startsoundset>
+	</power>
+	<power name="ypPowerGuardianStun" type="UnitAction">
+		<displaynameid>62770</displaynameid>
+		<rolloverid>62764</rolloverid>
+		<icon>art\ui\abilities\ability_guardian_stun</icon>
+		<minimapeventtime sendalertto="all">1</minimapeventtime>
+		<activetime>20</activetime>
+		<radius>0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<unitaction>Stun</unitaction>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerStun</startsoundset>
+	</power>
+	<power name="ypPowerSweep" type="Stun">
+		<displaynameid>63679</displaynameid>
+		<rolloverid>63680</rolloverid>
+		<icon>art\ui\command\mode_bombard</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>1.6</activetime>
+		<radius>3.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<stundamage>SweepDamage</stundamage>
+		<abstractattacktargettype>Military</abstractattacktargettype>
+		<abstractattacktargettype>Guardian</abstractattacktargettype>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerStomp</startsoundset>
+	</power>
+	<power name="ypPowerRoundhouse" type="UnitAction">
+		<displaynameid>65290</displaynameid>
+		<rolloverid>65291</rolloverid>
+		<icon>art\ui\abilities\ability_roundhouse_kick</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>Military</abstractattacktargettype>
+		<abstractattacktargettype>Guardian</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<unitaction>RoundhouseAttack</unitaction>
+	</power>
+	<power name="ypPowerCeaseFire" type="CeaseFire">
+		<displaynameid>62771</displaynameid>
+		<rolloverid>62765</rolloverid>
+		<icon>art\ui\abilities\ability_ceasefire</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>20</activetime>
+		<placement forceonmap="1" ally="">full</placement>
+		<soundset type="StartSound" listenertype="All">PowerCeaseFire</soundset>
+	</power>
+	<power name="ypPowerGoodFortune" type="GoodFortune">
+		<displaynameid>62772</displaynameid>
+		<rolloverid>62766</rolloverid>
+		<icon>art\ui\abilities\ability_good_fortune</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>20</activetime>
+		<radius>10.0</radius>
+		<placement forceonmap="1" ally="">full</placement>
+		<abstractattacktargettype>LogicalTypeHealed</abstractattacktargettype>
+		<rangeindicatorprotoid radius="10.0" indicatorcount="8" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<unitaction>Heal</unitaction>
+		<soundset type="StartSound" listenertype="Caster">PowerGoodFortune</soundset>
+		<hitpointstoheal>1000</hitpointstoheal>
+		<rate>1000</rate>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypPowerInformers" type="Informers">
+		<displaynameid>62773</displaynameid>
+		<rolloverid>62768</rolloverid>
+		<icon>art\ui\abilities\ability_informers</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>10</activetime>
+		<effect type="SharedLOS">
+			<target type="General"/>
+		</effect>
+		<placement forceonmap="1" ally="">full</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerInformers</startsoundset>
+	</power>
+	<power name="ypPowerBloodSmash" type="UnitAction">
+		<displaynameid>65739</displaynameid>
+		<rolloverid>65740</rolloverid>
+		<icon>art\ui\abilities\ability_anchor_fist</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<unitaction>BloodSmash</unitaction>
+		<soundset type="StartSound" listenertype="Caster" positional="True">PowerAnchorFist</soundset>
+	</power>
+	<power name="ypPowerDivineRight" type="GeneralEffect">
+		<displaynameid>65737</displaynameid>
+		<rolloverid>65738</rolloverid>
+		<icon>art\ui\abilities\ability_way_of_the_warrior</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>20</activetime>
+		<effect type="CanTargetButTakesNoDamage">
+			<target type="ProtoUnit">SwissPikeman</target>
+			<target type="ProtoUnit">ypSPCTokugawa</target>
+		</effect>
+		<messagealertplayerrelation>none</messagealertplayerrelation>
+		<placement forceonmap="1" ally="">full</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerInvulnerability</startsoundset>
+	</power>
+	<power name="ypPowerBattleShadow" type="GeneralEffect">
+		<displaynameid>65761</displaynameid>
+		<rolloverid>65762</rolloverid>
+		<icon>art\ui\abilities\ability_swashbuckler</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>2</activetime>
+		<effect type="ActionEnable" action="BattleShadow">
+			<target type="ProtoUnit">ypSPCKichiro</target>
+		</effect>
+		<placement forceonmap="1" ally="">full</placement>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypPowerFireCommand" type="GeneralEffect">
+		<displaynameid>66041</displaynameid>
+		<rolloverid>66042</rolloverid>
+		<icon>art\ui\abilities\ability_fire_command</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>10</activetime>
+		<effect type="ActionEnable" action="FireCommand">
+			<target type="ProtoUnit">ypSPCNanib</target>
+		</effect>
+		<placement forceonmap="1" ally="">full</placement>
+		<startsoundset>PowerAttackAura</startsoundset>
+	</power>
+	<power name="ypPowerSwordFury" type="GeneralEffect">
+		<displaynameid>65735</displaynameid>
+		<rolloverid>65736</rolloverid>
+		<icon>art\ui\abilities\ability_seven_spears</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>10</activetime>
+		<effect type="Damage" relativity="BasePercent" amount="5">
+			<target type="ProtoUnit">ypSPCKichiro</target>
+		</effect>
+		<messagealertplayerrelation>none</messagealertplayerrelation>
+		<placement forceonmap="1" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>GeneralKichiro7Spears</startsoundset>
+	</power>
+	<power name="ypPowerHeavenlyFireBomb" type="UnitAction">
+		<displaynameid>65741</displaynameid>
+		<rolloverid>65742</rolloverid>
+		<icon>art\ui\abilities\ability_heavenly_fire_bomb</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>10.0</radius>
+		<placement forceonmap="1">LOSDontCare</placement>
+		<abstractattacktargettype>Military</abstractattacktargettype>
+		<abstractattacktargettype>Guardian</abstractattacktargettype>
+		<unitaction>HeavenlyFireBomb</unitaction>
+	</power>
+	<power name="ypPowerHeavenlyTreeBomb" type="UnitAction">
+		<displaynameid>68437</displaynameid>
+		<rolloverid>68438</rolloverid>
+		<icon>art\ui\abilities\ability_tree_bomb</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>10.0</radius>
+		<placement forceonmap="1">LOSDontCare</placement>
+		<abstractattacktargettype>All</abstractattacktargettype>
+		<unitaction>HeavenlyTreeBomb</unitaction>
+	</power>
+	<power name="PowerLOS" type="TempUnit">
+		<displaynameid>25568</displaynameid>
+		<rolloverid>25569</rolloverid>
+		<icon>art\ui\abilities\ability_spyglass</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>5</activetime>
+		<createunit quantity="1" radius="0" delay="0.0">SpyglassRevealer</createunit>
+		<placement forceonmap="1">LOSDontCare</placement>
+		<rangeindicatorprotoid radius="12.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="PowerHP" type="UnitModify">
+		<displaynameid>25870</displaynameid>
+		<rolloverid>25871</rolloverid>
+		<icon>art\ui\abilities\ability_hp</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>30</activetime>
+		<unitmodify amount="1.1" apply="multiply">MaxHP</unitmodify>
+		<powerplayerrelation>ally</powerplayerrelation>
+		<radius>10.0</radius>
+		<abstractattacktargettype>LogicalTypeLandMilitary</abstractattacktargettype>
+		<placement forceonmap="1">full</placement>
+		<rangeindicatorprotoid radius="10.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+	</power>
+	<power name="PowerSharpshooter" type="UnitAction">
+		<displaynameid>32908</displaynameid>
+		<rolloverid>32909</rolloverid>
+		<icon>art\ui\abilities\ability_sharpshooter</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>Guardian</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<unitaction>SharpshooterAttack</unitaction>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypPowerSabotage" type="UnitAction">
+		<displaynameid>69742</displaynameid>
+		<rolloverid>69745</rolloverid>
+		<icon>art\ui\abilities\ability_japan_kayakujutin_icon_64</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>LogicalTypeValidSabotage</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<unitaction>SabotageAttack</unitaction>
+	</power>
+	<power name="PowerCrackshot" type="UnitAction">
+		<displaynameid>66043</displaynameid>
+		<rolloverid>66044</rolloverid>
+		<icon>art\ui\abilities\ability_sharpshooter</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>LogicalTypeValidSharpshoot</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<unitaction>CrackshotAttack</unitaction>
+	</power>
+	<power name="PowerEagleEye" type="UnitAction">
+		<displaynameid>45462</displaynameid>
+		<rolloverid>45463</rolloverid>
+		<icon>art\ui\abilities\eagle_eye</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>LogicalTypeValidSharpshoot</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<unitaction>CrackshotAttack</unitaction>
+	</power>
+	<power name="PowerSwashbuckler" type="UnitAction">
+		<displaynameid>34135</displaynameid>
+		<rolloverid>34136</rolloverid>
+		<icon>art\ui\abilities\ability_swashbuckler</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>All</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<unitaction>SwashbucklerAttack</unitaction>
+	</power>
+	<power name="PowerOberhau" type="UnitAction">
+		<displaynameid>37371</displaynameid>
+		<rolloverid>37372</rolloverid>
+		<icon>art\ui\abilities\Solingen_Steel</icon>
+		<!-- <icon>art\ui\abilities\animal_friendship</icon> -->
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<unitaction>OberhauAttack</unitaction>
+	</power>
+	<power name="PowerHawkeye" type="UnitAction">
+		<displaynameid>37368</displaynameid>
+		<rolloverid>37367</rolloverid>
+		<icon>art\ui\abilities\hawk_eye</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>LogicalTypeValidSharpshoot</abstractattacktargettype>
+		<unitaction>HawkeyeAttack</unitaction>
+	</power>
+	<power name="PowerArrow" type="UnitAction">
+		<displaynameid>37369</displaynameid>
+		<rolloverid>37370</rolloverid>
+		<icon>art\ui\abilities\ability_sharpshooter</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>LogicalTypeValidSharpshoot</abstractattacktargettype>
+		<unitaction>RedBearArrowAttack</unitaction>
+	</power>
+	<power name="PowerDoubleBarrel" type="UnitAction">
+		<displaynameid>34452</displaynameid>
+		<rolloverid>34453</rolloverid>
+		<icon>art\ui\abilities\ability_sharpshooter</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>LogicalTypeValidSharpshoot</abstractattacktargettype>
+		<unitaction>DoubleBarrelAttack</unitaction>
+	</power>
+	<power name="PowerBroadside" type="UnitAction">
+		<displaynameid>32910</displaynameid>
+		<rolloverid>32911</rolloverid>
+		<icon>art\ui\command\mode_broadside</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>5</activetime>
+		<radius>10.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>LogicalTypeRangedUnitsAttack</abstractattacktargettype>
+		<unitaction>BroadsideAttack</unitaction>
+	</power>
+	<power name="PowerLongRange" type="UnitAction">
+		<displaynameid>34137</displaynameid>
+		<rolloverid>34138</rolloverid>
+		<icon>art\ui\command\mode_bombard</icon>
+		<minimapeventtime sendalertto="all">1</minimapeventtime>
+		<activetime>5</activetime>
+		<radius>10.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>LogicalTypeRangedUnitsAttack</abstractattacktargettype>
+		<unitaction>LongRangeAttack</unitaction>
+	</power>
+	<power name="PowerHeal" type="UnitAction">
+		<displaynameid>200013</displaynameid>
+		<rolloverid>35604</rolloverid>
+		<icon>art\ui\abilities\ability_heal</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>10.0</radius>
+		<placement forceonmap="1" ally="">full</placement>
+		<abstractattacktargettype>LogicalTypeHealed</abstractattacktargettype>
+		<rangeindicatorprotoid radius="10.0" indicatorcount="8" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<unitaction>Heal</unitaction>
+		<hitpointstoheal>1200</hitpointstoheal>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="PowerBalloon" type="TempUnit">
+		<displaynameid>42372</displaynameid>
+		<rolloverid>42373</rolloverid>
+		<icon>units\balloons\hot_air_balloon</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>30</activetime>
+		<createunit quantity="1" radius="0" delay="0.0">HotAirBalloon</createunit>
+		<placement forceonmap="1">LOSDontCare</placement>
+		<rangeindicatorprotoid radius="12.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="ypIceCream" type="TempUnit">
+		<displaynameid>70471</displaynameid>
+		<rolloverid>70472</rolloverid>
+		<icon>units\villagers\villager_icon</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>60</activetime>
+		<createunit quantity="10" radius="5" delay="0.0">ypSettlerIceCream</createunit>
+		<placement forceonmap="1">LOSDontCare</placement>
+		<startsoundset>PowerIceCream</startsoundset>
+		<rangeindicatorprotoid radius="12.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="PowerConvertGuardian" type="UnitAction">
+		<displaynameid>44595</displaynameid>
+		<rolloverid>44596</rolloverid>
+		<icon>art\ui\abilities\animal_friendship</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="" gaiaonly="">unit</placement>
+		<abstractattacktargettype>Guardian</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<unitaction>ConvertGuardian</unitaction>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="ypPowerSmokeBomb" type="UnitAction">
+		<displaynameid>64300</displaynameid>
+		<rolloverid>65734</rolloverid>
+		<icon>art\ui\abilities\ability_smoke_bomb</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>4</activetime>
+		<radius>1.0</radius>
+		<placement forceonmap="1" ally="">full</placement>
+		<unitaction>SmokeBomb</unitaction>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerSmokeBomb</startsoundset>
+	</power>
+
+
+
+	<power name="ConvertNearbyUnits" type="swapunit">          
+		<displaynameid>200017</displaynameid>       
+		<rolloverid>200018</rolloverid>       
+		<icon>art\ui\abilities\animal_friendship2</icon>
+		<activetime>8</activetime> 
+		<radius>10.0</radius>       
+		<placement forceonmap="1" enemy="" allowgaia="" >unit</placement> 
+		<powerplayerrelation>enemy</powerplayerrelation>
+		<gpdamagemodel>
+			<playerrelation>enemy</playerrelation>
+			<basedamagepercentunit>0.6</basedamagepercentunit>
+			<basedamagepercentbuilding>0.0</basedamagepercentbuilding>
+			<basedamagepercentvillager>0.4</basedamagepercentvillager>
+			<minhpdamageunit>0</minhpdamageunit>
+			<minhpdamagebuilding>0</minhpdamagebuilding>
+			<minhpdamagevillager>0</minhpdamagevillager>
+			<maxhpdamageunit>5000</maxhpdamageunit>
+			<maxhpdamagebuilding>0</maxhpdamagebuilding>
+			<maxhpdamagevillager>5000</maxhpdamagevillager>
+		</gpdamagemodel>
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+		<rangeindicatorprotoid radius="10.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> 
+		<!--<global></global>--> 
+		<abstracttype swapto="Tapir">AbstractVillager</abstracttype>
+		<abstracttype swapto="Tapir">CountsTowardMilitaryScore</abstracttype> 
+		<abstracttype swapto="Tapir">Guardian</abstracttype>
+		<swapdelay>0.5</swapdelay> 
+		<unitaction>ConvertGuardian</unitaction>
+		<!--<swapselfonly></swapselfonly>-->    
+	</power>
+	<power name="Kagebunsin" type="TempUnit">
+		<displaynameid>200004</displaynameid>
+		<rolloverid>200005</rolloverid>
+		<icon>art\ui\abilities\ability_Kagebunsin</icon>
+		<!-- <icon>art\ui\abilities\animal_friendship</icon> -->
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>30</activetime>
+		<createunit quantity="4" radius="4" delay="0.1">Assassin</createunit>
+		<placement forceonmap="1" matchtype="Assassinin" ally="">unit</placement>
+		<startsoundset>PowerSmokeBomb</startsoundset>
+		<!-- <rangeindicatorprotoid radius="4.5" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> -->
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="FrightenHP" type="UnitAction">
+		<displaynameid>200009</displaynameid>
+		<rolloverid>200010</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_scare_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="HeroAura" type="UnitAction">
+		<displaynameid>200023</displaynameid>
+		<rolloverid>200024</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_daimyo_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="Rainwaves" type="UnitAction">
+		<displaynameid>200220</displaynameid>
+		<rolloverid>200214</rolloverid>
+		<icon>art\ui\abilities\ability_Fire_Command</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<!-- <rangeindicatorprotoid radius="7.5" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> -->
+		<activetime>8</activetime>
+		<radius>2.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="" >unit</placement> 
+		<abstractattacktargettype>unit</abstractattacktargettype>
+		<unitaction>Rainwaves</unitaction>
+	</power>
+	<power name="Rain" type="TempUnit">
+		<displaynameid>200025</displaynameid>
+		<rolloverid>200026</rolloverid>
+		<icon>art\ui\abilities\ability_tree_bomb</icon>
+		<!-- <Icon>art\terrain\trees\tree_icon_64</Icon> -->
+		<!-- <icon>art\ui\abilities\animal_friendship</icon> -->
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>20</activetime>
+		<createunit quantity="1" radius="0" delay="0.0">shockwave</createunit>
+		<createunit quantity="20" radius="8" delay="0.3">EXfire</createunit>
+		<createunit quantity="30" radius="9" delay="0.3">EXfire</createunit>
+		<createunit quantity="40" radius="10" delay="0.3">EXfire</createunit>
+		<createunit quantity="1" radius="0" delay="0.4">DamageObject</createunit>
+		<placement forceonmap="1">full</placement>
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+		<rangeindicatorprotoid radius="12" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="ExStun" type="UnitAction">
+		<displaynameid>200027</displaynameid>
+		<rolloverid>200028</rolloverid>
+		<icon>art\ui\abilities\ability_guardian_stun</icon>
+		<minimapeventtime sendalertto="all">1</minimapeventtime>
+		<activetime>15</activetime>
+		<radius>5</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<unitaction>ExStun</unitaction>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerStun</startsoundset>
+	</power>
+	<power name="ExSweep" type="Stun">
+		<displaynameid>63679</displaynameid>
+		<rolloverid>63680</rolloverid>
+		<icon>art\ui\command\mode_bombard</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>1.5</activetime>
+		<radius>3.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<stundamage>SweepDamage</stundamage>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerStomp</startsoundset>
+	</power>
+	<power name="BerserkerSoul" type="GeneralEffect">
+		<displaynameid>200039</displaynameid>
+		<rolloverid>200040</rolloverid>
+		<icon>art\ui\abilities\ability_BerserkerSoul</icon>
+		<!-- <icon>art\ui\abilities\animal_friendship</icon> -->
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>40</activetime>
+		
+		<effect type="ActionEnable" action="MeleeHandAttack2">
+			<target type="ProtoUnit">Berserker</target>
+		</effect>
+		<effect type="ActionEnable" action="FrightenArmor2">
+			<target type="ProtoUnit">Berserker</target>
+		</effect>
+		<effect type="MaximumVelocity" relativity="BasePercent" amount="1.2">
+			<target type="ProtoUnit">Berserker</target>
+		</effect>
+		<effect type="HitPoints" relativity="BasePercent" amount="1.25">
+			<target type="ProtoUnit">Berserker</target>
+		</effect>
+		
+		<messagealertplayerrelation>none</messagealertplayerrelation>
+		<placement forceonmap="1" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerInvulnerability</startsoundset>
+	</power>
+	<power name="BerserkerAttack1" type="GeneralEffect">
+		<displaynameid>200177</displaynameid>
+		<rolloverid>200178</rolloverid>
+		<icon>art\ui\abilities\ability_blood_charge</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>20</activetime>
+		<effect type="Damage" relativity="BasePercent" amount="1.5">
+			<target type="ProtoUnit">Military</target>
+		</effect>
+		<effect type="Armor" relativity="BasePercent" amount="0">
+			<target type="ProtoUnit">Military</target>
+		</effect>
+		<messagealertplayerrelation>none</messagealertplayerrelation>
+		<placement forceonmap="1" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>GeneralKichiro7Spears</startsoundset>
+	</power>
+	<power name="Hensin" type="swapunit">
+		<displaynameid>200037</displaynameid>
+		<rolloverid>200038</rolloverid>
+		<icon>art\ui\abilities\ability_Hensin</icon>
+		<!-- <icon>art\ui\abilities\animal_friendship</icon> -->
+		<activetime>0.6</activetime>
+		<radius>10.0</radius>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">RagnarokBirth</soundset>
+		<placement forceonmap="1">full</placement>
+		<powerplayerrelation>player</powerplayerrelation>
+		<!--<overallchance>1.0</overallchance>
+		<global/>-->
+		<abstracttype swapto="BerserkerTiger">Berserker</abstracttype>
+		<swapdelay>0.1</swapdelay>
+		<abstracttype swapto="Berserker">BerserkerTiger</abstracttype>
+		
+		<swapselfonly/>
+	</power>
+	<!-- <power name="BerserkerAttack1" type="UnitAction">
+		<displaynameid>65290</displaynameid>
+		<rolloverid>65291</rolloverid>
+		<icon>art\ui\abilities\ability_blood_charge</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<unitaction>BloodSmash</unitaction>
+		<soundset type="StartSound" listenertype="Caster" positional="True">PowerAnchorFist</soundset>
+	</power>
+	<power name="BerserkerAttack2" type="UnitAction">
+		<displaynameid>65290</displaynameid>
+		<rolloverid>65291</rolloverid>
+		<icon>art\ui\abilities\ability_roundhouse_kick</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<unitaction>RoundhouseAttack</unitaction>
+		<soundset type="StartSound" listenertype="Caster" positional="True">PowerAnchorFist</soundset>
+	</power> -->
+	<power name="EagleEye" type="TempUnit">
+		<displaynameid>200054</displaynameid>
+		<rolloverid>25569</rolloverid>
+		<icon>art\ui\abilities\eagle_eye</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>30</activetime>
+		<createunit quantity="1" radius="0" delay="0.0">SpyglassRevealer</createunit>
+		<placement forceonmap="1">LOSDontCare</placement>
+		<rangeindicatorprotoid radius="18.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="FireArrow" type="UnitAction">
+		<displaynameid>45462</displaynameid>
+		<rolloverid>45463</rolloverid>
+		<icon>art\ui\abilities\ability_Flaming_Arrow</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>all</abstractattacktargettype>
+		<unitaction>CrackshotAttack</unitaction>
+	</power>
+	<power name="EXArrow" type="UnitAction">
+		<displaynameid>200044</displaynameid>
+		<rolloverid>200045</rolloverid>
+		<icon>art\ui\abilities\ability_Flaming_Arrow</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>5.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>all</abstractattacktargettype>
+		<unitaction>FireArrowAttack</unitaction>
+	</power>
+	<power name="ArcherAura" type="UnitAction">
+		<displaynameid>200046</displaynameid>
+		<rolloverid>200047</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_kayakujutin_icon_64</icon>
+		<!-- <icon>art\ui\techs\asians\tech_passive_daimyo_aura</icon> -->
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="FrightenATK" type="UnitAction">
+		<displaynameid>200009</displaynameid>
+		<rolloverid>200010</rolloverid>
+		<icon>art\ui\techs\asians\tech_passive_scare_aura</icon>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="Traitors" type="swapunit">
+		<displaynameid>200044</displaynameid>
+		<rolloverid>200045</rolloverid>
+		<icon>art\ui\abilities\ability_Flaming_Arrow</icon>
+		<placement forceonmap="1" enemy="">unit</placement>
+		<activetime>0.10</activetime>
+		<damageonconvert>0.15 </damageonconvert>
+		<soundset type="StartSound" listenertype="Caster">Traitor</soundset>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<minimapeventtime sendalertto="all">10.0</minimapeventtime>
+		<traitorseffect>Traitors effect</traitorseffect>
+		<!-- <recharges>1 </recharges>
+		<rechargetime>180 </rechargetime> -->
+	</power>
+	<power name="Chaos" type="swapunit">
+		<displaynameid>200044</displaynameid>
+		<rolloverid>200045</rolloverid>
+		<icon>art\ui\abilities\ability_Flaming_Arrow</icon>
+		<activetime>-1</activetime>
+		<radius>20.0</radius>
+		<rangeindicatorprotoid radius="18.0" indicatorcount="8" speed="0.2">UI Range Indicator Atlantean SFX</rangeindicatorprotoid>
+		<soundset type="StartSound" listenertype="Caster">Chaos</soundset>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<placement forceonmap="1">full</placement>
+		<convertusingminmax minswapamount="3" maxswapamount="4">unit</convertusingminmax>
+		<!-- <convertusingminmax minswapamount="0" maxswapamount="1">myth</convertusingminmax> -->
+		<powerplayerrelation>enemy</powerplayerrelation>
+		<swapdelay>0.5</swapdelay>
+		<swapenemyonly></swapenemyonly>
+		<attachproto>Chaos effect</attachproto>
+		<abstractattacktargettype>unit</abstractattacktargettype>
+		<!-- <recharges>1 </recharges>
+		<rechargetime>240 </rechargetime> -->
+	</power>
+	<power name="starlight" type="GeneralEffect">
+		<displaynameid>200218</displaynameid>
+		<rolloverid>200219</rolloverid>
+		<icon>art\ui\abilities\ability_starlight</icon>
+		<!-- <icon>art\ui\abilities\animal_friendship</icon> -->
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>60</activetime>
+		
+		<effect type="ActionEnable" action="HandAttack2">
+			<target type="ProtoUnit">Kensei</target>
+		</effect>
+
+		<effect type="MaximumVelocity" relativity="BasePercent" amount="1.2">
+			<target type="ProtoUnit">Kensei</target>
+		</effect>
+		<effect type="Armor" relativity="BasePercent" amount="1.5">
+			<target type="ProtoUnit">Kensei</target>
+		</effect>
+		
+		<messagealertplayerrelation>none</messagealertplayerrelation>
+		<placement forceonmap="1" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerInvulnerability</startsoundset>
+	</power>
+	<power name="speedup" type="GeneralEffect">
+		<displaynameid>200223</displaynameid>
+		<rolloverid>200224</rolloverid>
+		<icon>art\ui\abilities\ability_speedup</icon>
+		<!-- <icon>art\ui\abilities\animal_friendship</icon> -->
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>30</activetime>
+
+		<effect type="MaximumVelocity" relativity="BasePercent" amount="1.5">
+			<target type="ProtoUnit">unicorn</target>
+		</effect>
+		<effect type="Damage" relativity="BasePercent" amount="2.0">
+			<target type="ProtoUnit">unicorn</target>
+		</effect>
+		<effect type="Armor" relativity="BasePercent" amount="2.0">
+			<target type="ProtoUnit">unicorn</target>
+		</effect>
+		<messagealertplayerrelation>none</messagealertplayerrelation>
+		<placement forceonmap="1" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerInvulnerability</startsoundset>
+	</power>
+	<power name="Tornado" type="TempUnit">
+		<displaynameid>200261</displaynameid>
+		<rolloverid>200262</rolloverid>
+		<icon>art\ui\abilities\ability_Tornado</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>60</activetime>
+		<createunit quantity="1" radius="0" delay="0.0">shockwave</createunit>
+		<createunit quantity="1" radius="0" delay="0.2">POWERtornado</createunit>
+		<placement forceonmap="1">full</placement>
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+		<rangeindicatorprotoid radius="5.5" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="MotherFucker" type="TempUnit">
+		<displaynameid>200263</displaynameid>
+		<rolloverid>200264</rolloverid>
+		<icon>art\ui\abilities\ability_thuggee</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>90</activetime>
+		<createunit quantity="1" radius="0" delay="0.0">shockwave</createunit>
+		<createunit quantity="4" radius="5" delay="0.2">motherfucker</createunit>
+		<createunit quantity="6" radius="7" delay="0.2">motherfucker</createunit>
+		<placement forceonmap="1" matchtype="Curser" ally="">unit</placement>
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+		<rangeindicatorprotoid radius="8.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="KemonoFriends" type="TempUnit">
+		<displaynameid>200270</displaynameid>
+		<rolloverid>200271</rolloverid>
+		<icon>art\ui\abilities\ability_Hensin</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>60</activetime>
+		<createunit quantity="1" radius="0" delay="0.0">shockwave</createunit>
+		<createunit quantity="1" radius="3" delay="0.2">RhinoFriend</createunit>
+		<createunit quantity="1" radius="4" delay="0.2">CatFriend</createunit>
+		<createunit quantity="1" radius="5" delay="0.2">BoarFriend</createunit>
+		<createunit quantity="1" radius="6" delay="0.2">FennecFriend</createunit>
+		<createunit quantity="1" radius="7" delay="0.2">HyenaFriend</createunit>
+		<!-- <placement forceonmap="1">full</placement> -->
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+		<!-- <rangeindicatorprotoid radius="8.0" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> -->
+		<placement forceonmap="1" matchtype="shaka" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="PowerJavelin" type="UnitAction">
+		<displaynameid>200268</displaynameid>
+		<rolloverid>200269</rolloverid>
+		<icon>art\ui\abilities\ability_Javelin</icon>
+		<!-- <icon>art\ui\abilities\animal_friendship</icon> -->
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>17</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">All</placement>
+		<abstractattacktargettype>All</abstractattacktargettype>
+		<unitaction>JavelinAttack</unitaction>
+	</power>
+	<power name="ExStunHouse" type="UnitAction">
+		<displaynameid>200306</displaynameid>
+		<rolloverid>200307</rolloverid>
+		<icon>art\ui\abilities\ability_blockade</icon>
+		<minimapeventtime sendalertto="all">1</minimapeventtime>
+		<activetime>20</activetime>
+		<radius>5</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">LogicalTypeShipsAndBuildings</placement>
+		<unitaction>ExStunHouse</unitaction>
+		<abstractattacktargettype>LogicalTypeShipsAndBuildings</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerStun</startsoundset>
+	</power>
+	<power name="Futago" type="TempUnit">
+		<displaynameid>200310</displaynameid>
+		<rolloverid>200311</rolloverid>
+		<icon>art\ui\abilities\ability_futago</icon>
+		<!-- <icon>art\ui\abilities\animal_friendship</icon> -->
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>60</activetime>
+		<createunit quantity="1" radius="2" delay="0.1">Kabuki</createunit>
+		<placement forceonmap="1" matchtype="Kabuki" ally="">unit</placement>
+		<effect type="Damage" relativity="BasePercent" amount="0.55">
+			<target type="ProtoUnit">Kabuki</target>
+		</effect>
+		<startsoundset>PowerSmokeBomb</startsoundset>
+		<!-- <rangeindicatorprotoid radius="4.5" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> -->
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="Shingeki" type="GeneralEffect">
+		<displaynameid>200304</displaynameid>
+		<rolloverid>200305</rolloverid>
+		<icon>art\ui\abilities\ability_way_of_the_warrior</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>15</activetime>
+		<effect type="ActionEnable" action="HandAttack2">
+			<target type="ProtoUnit">Giant</target>
+		</effect>
+		<effect type="ActionEnable" action="TrampleHandAttack">
+			<target type="ProtoUnit">Giant</target>
+		</effect>
+		<effect type="MaximumVelocity" relativity="BasePercent" amount="1.5">
+			<target type="ProtoUnit">Giant</target>
+		</effect>		
+		<messagealertplayerrelation>none</messagealertplayerrelation>
+		<placement forceonmap="1" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset>PowerInvulnerability</startsoundset>
+	</power>
+	<power name="GiantThrow" type="UnitAction">
+		<displaynameid>200308</displaynameid>
+		<rolloverid>200309</rolloverid>
+		<icon>art\ui\abilities\ability_giantthrow</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<!-- <rangeindicatorprotoid radius="7.5" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid> -->
+		<activetime>8</activetime>
+		<radius>2.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="" >unit</placement> 
+		<abstractattacktargettype>unit</abstractattacktargettype>
+		<unitaction>Rainwaves</unitaction>
+	</power>
+	<power name="HOLYdefense" type="TempUnit">
+		<displaynameid>200324</displaynameid>
+		<rolloverid>200325</rolloverid>
+		<icon>art\ui\abilities\ability_HOLYdefense</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>20</activetime>
+		<createunit quantity="1" radius="0" delay="0.1">HOLYdefense</createunit>
+		<placement forceonmap="1" matchtype="Kabuki" ally="">unit</placement>
+		<startsoundset>HOLYpeace</startsoundset>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="PowerConvertUnitEX" type="UnitAction">
+		<displaynameid>200330</displaynameid>
+		<rolloverid>200331</rolloverid>
+		<icon>art\ui\abilities\animal_friendship</icon>
+		<minimapeventtime sendalertto="player">1</minimapeventtime>
+		<activetime>8</activetime>
+		<radius>15.0</radius>
+		<placement forceonmap="1" enemy="" allowgaia="">unit</placement>
+		<abstractattacktargettype>UnitClass</abstractattacktargettype>
+		<abstractattacktargettype>Guardian</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Hero</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>RailroadUnit</explicitlyrestrictedattacktargettype>
+		<explicitlyrestrictedattacktargettype>WaterGuardian</explicitlyrestrictedattacktargettype>
+		<unitaction>PowerConvertUnitEX</unitaction>
+		<allowduringnorush>0</allowduringnorush>
+	</power>
+	<power name="Storm" type="TempUnit">
+		<displaynameid>200336</displaynameid>
+		<rolloverid>200337</rolloverid>
+		<icon>art\ui\abilities\ability_flash</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>60</activetime>
+		<createunit quantity="1" radius="0" delay="0.0">shockwave</createunit>
+		<createunit quantity="1" radius="0" delay="0.2">POWERstorm</createunit>
+		<createunit quantity="2" radius="7" delay="0.7">POWERstorm</createunit>
+		<createunit quantity="1" radius="5" delay="1.2">POWERstorm</createunit>
+		<placement forceonmap="1">full</placement>
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+		<rangeindicatorprotoid radius="10" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="Robotarmy" type="TempUnit">
+		<displaynameid>200344</displaynameid>
+		<rolloverid>200345</rolloverid>
+		<icon>art\ui\abilities\ability_march</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>30</activetime>
+		<createunit quantity="3" radius="4" delay="0.2">Robot</createunit>
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+		<placement forceonmap="1" matchtype="RobotLeader" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="Robotrepair" type="swapunit">
+		<displaynameid>200346</displaynameid>
+		<rolloverid>200347</rolloverid>
+		<icon>art\ui\abilities\ability_repair</icon>
+		<activetime>1</activetime>
+		<radius>10.0</radius> 
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+		<placement forceonmap="1" allowgaia="" matchtype="RobotDead" ally="">unit</placement>
+		<rangeindicatorprotoid radius="10" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<powerplayerrelation>player</powerplayerrelation>
+		<!--<overallchance>1.0</overallchance>
+		<global/>-->
+		<abstracttype swapto="Robot">RobotDead</abstracttype>
+		<swapdelay>2.0</swapdelay>
+		
+		<!-- <swapselfonly/> -->
+	</power>
+	<power name="Robotmarch" type="GeneralEffect">
+		<displaynameid>200348</displaynameid>
+		<rolloverid>200349</rolloverid>
+		<icon>art\ui\abilities\ability_gear</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>30</activetime>
+
+		<effect type="Damage" relativity="BasePercent" amount="1.5">
+			<target type="ProtoUnit">Robot</target>
+		</effect>
+		<effect type="Damage" relativity="BasePercent" amount="1.5">
+			<target type="ProtoUnit">RobotLeader</target>
+		</effect>
+		<effect type="HitPoints" relativity="BasePercent" amount="1.25">
+			<target type="ProtoUnit">Robot</target>
+		</effect>
+		<effect type="HitPoints" relativity="BasePercent" amount="1.25">
+			<target type="ProtoUnit">RobotLeader</target>
+		</effect>
+		<messagealertplayerrelation>none</messagealertplayerrelation>
+		<placement forceonmap="1" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+	</power>
+	<power name="Robotarmy2" type="TempUnit">
+		<displaynameid>200344</displaynameid>
+		<rolloverid>200345</rolloverid>
+		<icon>art\ui\abilities\ability_march</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>5</activetime>
+		<createunit quantity="1" radius="0" delay="0.0">shockwave</createunit>
+		<createunit quantity="5" radius="3" delay="0.5">RobotDead</createunit>
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+		<placement forceonmap="1" matchtype="RobotLeader" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="ArrowStorm" type="TempUnit">
+		<displaynameid>200357</displaynameid>
+		<rolloverid>200358</rolloverid>
+		<icon>art\ui\abilities\ability_arrow</icon>
+		<minimapeventtime sendalertto="ally">1</minimapeventtime>
+		<activetime>30</activetime>
+		<createunit quantity="1" radius="0" delay="0.0">shockwave</createunit>
+		<createunit quantity="1" radius="0" delay="0.0">SpyglassRevealer</createunit>
+		<createunit quantity="1" radius="0" delay="0.2">POWERarrow</createunit>
+		<createunit quantity="2" radius="2" delay="0.4">POWERarrow</createunit>
+		<createunit quantity="3" radius="4" delay="0.6">POWERarrow</createunit>
+		<createunit quantity="4" radius="6" delay="0.8">POWERarrow</createunit>
+		<createunit quantity="5" radius="7" delay="1.0">POWERarrow</createunit>
+		<createunit quantity="5" radius="8" delay="1.0">POWERarrow</createunit>
+		<placement forceonmap="1">full</placement>
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+		<rangeindicatorprotoid radius="15" indicatorcount="16" speed="0.6">PowerRanger</rangeindicatorprotoid>
+		<allowduringnorush>1</allowduringnorush>
+		<alwaysaddtoplayer>1</alwaysaddtoplayer>
+	</power>
+	<power name="BirdAttack" type="GeneralEffect">
+		<displaynameid>200359</displaynameid>
+		<rolloverid>200360</rolloverid>
+		<icon>art\ui\abilities\ability_bird</icon>
+		<minimapeventtime sendalertto="none">1</minimapeventtime>
+		<activetime>30</activetime>
+		<effect type="ActionEnable" action="VolleyRangedAttack2">
+			<target type="ProtoUnit">AraraAzul</target>
+		</effect>
+		<messagealertplayerrelation>none</messagealertplayerrelation>
+		<placement forceonmap="1" ally="">unit</placement>
+		<allowduringnorush>1</allowduringnorush>
+		<startsoundset listenertype="All">Coronelpower</startsoundset>
+	</power>
+</powers>

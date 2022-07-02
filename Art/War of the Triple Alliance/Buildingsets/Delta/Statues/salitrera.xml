@@ -1,0 +1,175 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone01</definebone>
+
+
+
+
+	<submodel>
+		sub_construction_stage_01
+		<component>
+			construction_stage_01
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\4x4_stage1</file>
+			</assetreference>
+			<decal>
+			<effecttype>bump</effecttype>
+			<texture>objects\cave\cave_dirt_rock_ground</texture>
+			<bumptexture>objects\cave\cave_dirt_rock_ground_bumpmap</bumptexture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+			<width>10.50</width>
+			<height>10.50</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_01</component>
+		</anim>
+	</submodel>
+	<submodel>
+		sub_construction_stage_02
+		<component>
+			construction_stage_01
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\4x4_stage2</file>
+			</assetreference>
+			<decal>
+			<effecttype>bump</effecttype>
+			<texture>objects\cave\cave_dirt_rock_ground</texture>
+			<bumptexture>objects\cave\cave_dirt_rock_ground_bumpmap</bumptexture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+			<width>10.50</width>
+			<height>10.50</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_01</component>
+		</anim>
+	</submodel>
+	<submodel>
+		sub_construction_stage_03
+		<component>
+			construction_stage_03
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\4x4_stage3</file>
+			</assetreference>
+			<decal>
+			<effecttype>bump</effecttype>
+			<texture>objects\cave\cave_dirt_rock_ground</texture>
+			<bumptexture>objects\cave\cave_dirt_rock_ground_bumpmap</bumptexture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+			<width>10.50</width>
+			<height>10.50</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>construction_stage_01</component>
+		</anim>
+	</submodel>
+	<submodel>
+		mine
+	<attachment>
+		attachment_cave_glow
+		<component>
+			cave_glow
+			<assetreference type="ParticleSystem">
+				<file>objects\cave\cave_glow.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cave_glow</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachement_collapse_dust
+		<component>
+			collapse_dust
+			<assetreference type="ParticleSystem">
+				<file>objects\cave\cave_collapse_dust.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>collapse_dust</component>
+		</anim>
+	</attachment>
+		<attachment>
+			con
+			<component>
+				scaffolding
+				<assetreference type="GrannyModel">
+					<file>buildings\constructions\4x4_stage3</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>scaffolding</component>
+			</anim>
+		</attachment>
+	<attachment>
+		flag
+		<component>horse2</component>
+		<include>War of the Triple Alliance\Buildingsets\Delta\Egyptian\camel\flagbig.xml</include>
+	</attachment>
+	<component>
+		cave
+		<assetreference type="GrannyModel">
+			<file>War of the Triple Alliance\Buildingsets\Delta\Statues\salitrera</file>
+		</assetreference>
+		<attach a="flag" frombone="" tobone="bone01" syncanims="1"/>
+		<decal>
+			<effecttype>bump</effecttype>
+			<texture>objects\cave\cave_dirt_rock_ground</texture>
+			<bumptexture>objects\cave\cave_dirt_rock_ground_bumpmap</bumptexture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+			<width>10.50</width>
+			<height>10.50</height>
+		</decal>
+	</component>
+	<anim>
+		idle
+		<component>cave</component>
+	</anim>
+	<anim>
+		death
+		<assetreference type="GrannyAnim">
+			<file>objects\cave\cave_dirt_collapse</file>
+		</assetreference>
+		<component>cave</component>
+		<attach a="attachement_collapse_dust" frombone="ATTACHPOINT" tobone="bone_glow_01" syncanims="0"/>
+	</anim>
+	<anim>
+		Closed
+		<assetreference type="GrannyAnim">
+			<file>objects\cave\cave_dirt_collapsed</file>
+		</assetreference>
+		<component>cave</component>
+	</anim>
+	</submodel>
+
+	<component>
+		mine
+						<logic type="BuildingCompletion">
+							<p0>
+								<submodelref ref="sub_construction_stage_01"/>
+							</p0>
+							<p33>
+								<submodelref ref="sub_construction_stage_02"/>
+							</p33>
+							<p66>
+								<submodelref ref="sub_construction_stage_02"/>
+							</p66>
+							<p100>
+								<submodelref ref="mine"/>
+							</p100>
+						</logic>
+
+
+	</component>
+
+
+</animfile>

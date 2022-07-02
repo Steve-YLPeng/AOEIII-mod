@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>Bone01</definebone>
+	<definebone>Bip01 Prop1</definebone>
+	<definebone>Bip01 Prop2</definebone>
+	<definebone>bone_wheel03</definebone>
+    <definebone>bone_wheel04</definebone>
+    <definebone>bone_wagon</definebone>
+    <definebone>bone01</definebone>
+    <definebone>bone02</definebone>
+    <definebone>bone03</definebone>
+    <definebone>bone04</definebone>
+    <definebone>bone05</definebone>
+	<attachment>
+		Rider
+		<include>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult.xml</include>
+	</attachment>
+	<component>
+		catapult
+		<assetreference type="GrannyModel">
+			<file>War of the Triple Alliance\Delta\African Animals\bases\70</file>
+		</assetreference>
+		<attach a="Rider" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_128x128</texture>
+			<selectedtexture>shadows_selections\selection_oval_64x128</selectedtexture>
+			<width>2.00</width>
+			<height>4.00</height>
+		</decal>
+		<watersplash>
+			<texture>units\artillery\cannon\wheel_B</texture>
+			<width>1.75</width>
+			<height>2.00</height>
+		</watersplash>
+	</component>
+	<component>
+		catapult_death
+		<assetreference type="GrannyModel">
+			<file>War of the Triple Alliance\Delta\African Animals\bases\70</file>
+		</assetreference>
+		<attach a="Rider" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_128x128</texture>
+			<selectedtexture>shadows_selections\selection_oval_64x128</selectedtexture>
+			<width>2.00</width>
+			<height>4.00</height>
+		</decal>
+		<watersplash>
+			<texture>units\artillery\cannon\wheel_B</texture>
+			<width>1.75</width>
+			<height>2.00</height>
+		</watersplash>
+	</component>
+	<component>
+		catapult_shot
+		<assetreference type="GrannyModel">
+			<file>War of the Triple Alliance\Delta\African Animals\bases\70</file>
+		</assetreference>
+		<attach a="Rider" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_128x128</texture>
+			<selectedtexture>shadows_selections\selection_oval_64x128</selectedtexture>
+			<width>2.00</width>
+			<height>4.00</height>
+		</decal>
+		<watersplash>
+			<texture>units\artillery\cannon\wheel_B</texture>
+			<width>1.75</width>
+			<height>2.00</height>
+		</watersplash>
+	</component>
+	
+	<anim>
+		Bombard_ranged_idle
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<component>catapult</component>
+	</anim>
+	<anim>
+		Bombard_ranged_attack
+		<assetreference type="GrannyAnim">
+			<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_shooting</file>
+			<tag type="Attack">0.88</tag>
+			<tag type="Attack">0.87</tag>
+			<tag type="Attack">0.86</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.02</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.24</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.50</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Catapultattacks">0.82</tag>
+		</assetreference>
+		<component>catapult_shot</component>
+	</anim>
+	<anim>
+		Bombard_aim
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<component>catapult</component>
+	</anim>
+	<anim>
+		Bombard_reload
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<component>catapult</component>
+	</anim>
+	<anim>
+		Bombard_bored
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<component>catapult</component>
+	</anim>
+	<anim>
+		Bombard_walk
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<attach a="Horse_Debris" frombone="HS Bone Master" tobone="HS Bone Hoof Back Lt" syncanims="0"/>
+		<attach a="Horse_Debris" frombone="HS Bone Master" tobone="HS Bone Hoof Back Rt" syncanims="0"/>
+		<attach a="Horse_Dust" frombone="HS Bone Master" tobone="HS Bone Hoof Back Lt" syncanims="0"/>
+		<attach a="Horse_Dust" frombone="HS Bone Master" tobone="HS Bone Hoof Back Rt" syncanims="0"/>
+		<component>catapult</component>
+	</anim>
+	<anim>
+		Bombard_jog
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<component>catapult</component>
+	</anim>
+	<anim>
+		Bombard_run
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<attach a="Horse_Debris" frombone="HS Bone Master" tobone="HS Bone Hoof Back Lt" syncanims="0"/>
+		<attach a="Horse_Debris" frombone="HS Bone Master" tobone="HS Bone Hoof Back Rt" syncanims="0"/>
+		<attach a="Horse_Dust" frombone="HS Bone Master" tobone="HS Bone Hoof Back Lt" syncanims="0"/>
+		<attach a="Horse_Dust" frombone="HS Bone Master" tobone="HS Bone Hoof Back Rt" syncanims="0"/>
+		<component>catapult</component>
+	</anim>
+	<anim>
+		Bombard_limber
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<component>falconet</component>
+	</anim>
+	<anim>
+		Bombard_unlimber
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<component>falconet</component>
+	</anim>
+	<anim>
+		Bombard_cheer
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<component>catapult</component>
+	</anim>
+	<anim>
+		Bombard_Recoil
+		<assetreference type="GrannyAnim">
+				<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_body</file>
+		</assetreference>
+		<component>catapult</component>
+	</anim>
+	<anim>
+		Bombard_death
+		<assetreference type="GrannyAnim">
+			<file>War of the Triple Alliance\Units\Delta\Zulu\catapult\catapult_destruction</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="CartBreak">0.08</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.27</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.79</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="BuildingPartImpact">0.65</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.63</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="BuildingPartImpact">0.69</tag>
+		</assetreference>
+		<component>catapult_death</component>
+	</anim>
+</animfile>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<attachment>
+		sword2
+		<include>units\infantry\boneguard\boneguard_sword.xml</include>
+	</attachment>
+	<attachment>
+		sword3
+		<component>
+			sword3
+			<assetreference type="GrannyModel">
+				<file>units\attachments\rapier.gr2</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>sword3</component>
+		</anim>
+	</attachment>
+	<!-- <attachment>
+		sword1
+		<include>units\asians\consulate\redolero\redolero_sword.xml</include>
+	</attachment> -->
+	<attachment>
+		sword1
+		<component>
+			sword1
+			<assetreference type="GrannyModel">
+				<file>units\attachments\sword</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>sword1</component>
+		</anim>
+	</attachment>
+	<component>
+		crossbows
+		<logic type="Tech">
+			<none>
+				<assetreference type="GrannyModel">
+					<file>units\infantry_ranged\crossbow\crossbow_2age_crossbow</file>
+				</assetreference>
+				<attach a="sword1" frombone="MASTER" tobone="bone_crossbow" syncanims="0"/>
+			</none>
+			<VeteranForceCrossbow>
+				<assetreference type="GrannyModel">
+					<file>units\infantry_ranged\crossbow\crossbow_3age_crossbow</file>
+				</assetreference>
+				<attach a="sword2" frombone="MASTER" tobone="bone_crossbow" syncanims="0"/>
+			</VeteranForceCrossbow>
+			<GuardForceCrossbow>
+				<assetreference type="GrannyModel">
+					<file>units\infantry_ranged\crossbow\crossbow_4age_crossbow</file>
+					<!-- <replacetexture>
+						<from>units\infantry_ranged\crossbow\crossbow_4age</from>
+						<to>units\ForceCrossbow\force_crossbow_4age</to>
+					</replacetexture> -->
+				</assetreference>
+				
+				<attach a="sword3" frombone="MASTER" tobone="bone_crossbow" syncanims="0"/>
+			</GuardForceCrossbow>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>crossbows</component>
+	</anim>
+</animfile>

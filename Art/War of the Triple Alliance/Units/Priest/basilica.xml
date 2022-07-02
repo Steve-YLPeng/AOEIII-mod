@@ -1,0 +1,301 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_place00</definebone>
+	<definebone>bone_place01</definebone>
+	<definebone>bone_place02</definebone>
+	<attachment>
+		short flag
+		<component>
+			flag
+			<assetreference type="ClothFlag">
+				<flag>
+					<blending>alphatest_color</blending>
+					<specialtexture/>
+					<width>1.75</width>
+					<height>1.25</height>
+				</flag>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>flag</component>
+		</anim>
+	</attachment>
+	<attachment>
+		short flag color
+		<component>
+			flag
+			<assetreference type="ClothFlag">
+				<flag>
+					<blending>alphatest_color</blending>
+					<texture>buildings\flags\pendent</texture>
+					<width>3.00</width>
+					<height>1.50</height>
+				</flag>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>flag</component>
+		</anim>
+	</attachment>
+	<attachment>
+		tall flag
+		<component>
+			flag
+			<assetreference type="ClothFlag">
+				<flag>
+					<blending>alphatest_color</blending>
+					<specialtexture/>
+					<width>2.50</width>
+					<height>1.65</height>
+				</flag>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>flag</component>
+		</anim>
+	</attachment>
+	<attachment>
+		tall flag color
+		<component>
+			flag
+			<assetreference type="ClothFlag">
+				<flag>
+					<blending>alphatest_color</blending>
+					<texture>buildings\flags\pendent</texture>
+					<width>3.00</width>
+					<height>1.75</height>
+				</flag>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>flag</component>
+		</anim>
+	</attachment>
+	<attachment>
+		huge flag
+		<component>
+			flag
+			<assetreference type="ClothFlag">
+				<flag>
+					<blending>alphatest_color</blending>
+					<specialtexture/>
+					<width>5.00</width>
+					<height>3.35</height>
+				</flag>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>flag</component>
+		</anim>
+	</attachment>
+	<attachment>
+		short flag color1
+		<component>
+			flag
+			<assetreference type="ClothFlag">
+				<flag>
+					<blending>alphatest_color</blending>
+					<texture>buildings\flags\pendent01</texture>
+					<width>2.00</width>
+					<height>1.25</height>
+				</flag>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>flag</component>
+		</anim>
+	</attachment>
+	<attachment>
+		tall flag color1
+		<component>
+			flag
+			<assetreference type="ClothFlag">
+				<flag>
+					<blending>alphatest_color</blending>
+					<texture>buildings\flags\pendent01</texture>
+					<width>2.50</width>
+					<height>1.50</height>
+				</flag>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>flag</component>
+		</anim>
+	</attachment>
+	<attachment>
+		HealRays
+		<component>
+			HealFXEmitter
+			<assetreference type="ParticleSystem">
+				<file>War of the Triple Alliance\Units\coronel\auracalunia.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>HealFXEmitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		pigeons
+		<component>
+			HealFXEmitter
+			<assetreference type="ParticleSystem">
+				<file>effects\dance_pit\signalfire_birds.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>HealFXEmitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		HealRays2
+		<component>
+			HealFXEmitter
+			<assetreference type="ParticleSystem">
+				<file>effects\EXPLOSIONS\small_shockwaveSlow.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>HealFXEmitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Pigeon
+		<component>
+			HealFXEmitter
+			<assetreference type="ParticleSystem">
+				<file>effects\animal particles\PigeonFlock.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>HealFXEmitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Glow
+		<component>
+			HealFXEmitter
+			<assetreference type="ParticleSystem">
+				<file>objects\cave\cave_glow.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>HealFXEmitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		mist
+		<component>
+			emitter2
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\gc_clouds_medium1.particle</file>
+		<replacetexture>
+<from>effects\invisible</from>
+			<to>effects\weather\cloud_06</to>
+		</replacetexture>
+			</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>5.00</width>
+			<height>5.00</height>
+		</decal>
+
+		</component>
+		<anim>
+			None
+			<component>emitter2</component>
+		</anim>
+	</attachment>
+		<attachment>
+			HolyGlow
+			<component>
+				HealFXEmitter
+				<assetreference type="ParticleSystem">
+					<file>War of the Triple Alliance\Units\Priest\holyglowbig.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				None
+				<component>HealFXEmitter</component>
+			</anim>
+		</attachment>
+	<attachment>
+		Buzzard
+		<include>War of the Triple Alliance\Units\Priest\pigeons.xml</include>
+	</attachment>
+	<attachment>
+		shockwave
+		<component>
+			shockwave
+			<assetreference type="ParticleSystem">
+				<file>effects\explosions\shockwave.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>shockwave</component>
+		</anim>
+	</attachment>
+	<attachment>
+		BigSparks
+		<component>
+			BigSparks
+			<assetreference type="ParticleSystem">
+				<file>effects\explosions\bigSparkles.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>BigSparks</component>
+		</anim>
+	</attachment>
+	<component>
+		spc_flag
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>objects\spc\spc_flag\spc_flagpole_tall</file>
+				</assetreference>
+				<attach a="glow" frombone="bone_place00" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="mist" frombone="bone_place00" tobone="HITPOINTBAR" syncanims="0"/>
+				<attach a="Holyglow" frombone="bone_place00" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="tall flag" frombone="bone_place00" tobone="bone_place00" syncanims="0"/>
+				<attach a="Pigeons" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="Pigeon" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="HealRays2" frombone="ATTACHPOINT" tobone="bone_place01" syncanims="0"/>
+				<attach a="Shockwave" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="Bigsparks" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			</data>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture>War of the Triple Alliance\Units\Priest\basilica</texture>
+			<selectedtexture>War of the Triple Alliance\Units\Priest\basilica</selectedtexture>
+
+			<width>25.00</width>
+			<height>25.00</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>spc_flag</component>
+	</anim>
+	<anim>
+		Death
+		<component>spc_flag</component>
+	</anim>
+</animfile>

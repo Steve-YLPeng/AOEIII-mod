@@ -1,0 +1,76 @@
+<!-- converted from XMB to XML -->
+
+<impacteffect metercount="8" meterlength="1.0">
+	<wood fireexisttime="3000">
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</wood>
+	<stone>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</stone>
+	<flesh>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</flesh>
+	<dirt>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</dirt>
+	<snow>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</snow>
+	<animal>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</animal>
+	<terraingrass>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</terraingrass>
+	<terrainwater>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</terrainwater>
+	<terraindirt>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</terraindirt>
+	<terrainstone>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</terrainstone>
+	<terrainsnow>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</terrainsnow>
+	<terrainsand>
+		<particleset>holyblowBIG</particleset>
+
+		<soundset>HoopImpact</soundset>
+		<soundset>HoopImpact</soundset>
+	</terrainsand>
+</impacteffect>

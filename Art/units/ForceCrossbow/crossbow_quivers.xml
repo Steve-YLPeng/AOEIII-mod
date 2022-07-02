@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<component>
+		quiver
+		<assetreference type="GrannyModel">
+			<file>units\infantry_ranged\crossbow\crossbow_3age_quiver</file>
+		</assetreference>
+	</component>
+	<anim>
+		Idle
+		<component>quiver</component>
+	</anim>
+</animfile>

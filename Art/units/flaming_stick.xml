@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_flaming_stick</definebone>
+	<definebone>bone_stick_flame</definebone>
+	<attachment>
+		fire
+		<component>
+			fire emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\fire_torch_b.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>fire emitter</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>units\attachments\flaming_stick</file>
+			<replacetexture>
+				<from>units\asians\japanese\flaming_arrow\flamingArrow_alpha</from>
+				<to>units\flamingArrow_alpha</to>
+			</replacetexture>
+		</assetreference>
+		<attach a="fire" frombone="bone_stick_flame" tobone="bone_stick_flame" syncanims="0"/>
+	</component>
+	<anim>
+		Idle
+		<component>ModelComp</component>
+	</anim>
+</animfile>

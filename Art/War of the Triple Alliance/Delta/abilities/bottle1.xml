@@ -1,0 +1,38 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>Bip01 Prop1</definebone>
+	<definebone>Bip01 Prop2</definebone>
+
+
+	<submodel>
+		Tusks1
+		<component>
+			male
+			<assetreference type="GrannyModel">
+				<file>War of the Triple Alliance\Delta\abilities\bottle1</file>
+			</assetreference>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+				<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+				<width>1.00</width>
+				<height>1.00</height>
+			</decal>
+		</component>
+
+		<anim>
+			Idle
+			<component>male</component>
+		</anim>
+	</submodel>
+
+	<component>
+		Model
+				<logic type="Variation">
+					<data>
+						<submodelref ref="Tusks1"/>
+					</data>
+				</logic>
+	</component>
+</animfile>

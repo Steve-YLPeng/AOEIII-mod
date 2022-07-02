@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<component>
+		Maza
+		<logic type="Tech">
+			<none>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\DLC\EqBas\Accesorios\Armas\Mele\Masa Inca\Maza1</file>
+				</assetreference>
+			</none>
+			<veteranmusketeers>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\DLC\EqBas\Accesorios\Armas\Mele\Masa Inca\Maza2</file>
+				</assetreference>
+			</veteranmusketeers>
+			<guardmusketeers>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\DLC\EqBas\Accesorios\Armas\Mele\Masa Inca\Masa3</file>
+				</assetreference>
+			</guardmusketeers>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>Maza</component>
+	</anim>
+</animfile>

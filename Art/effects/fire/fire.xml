@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<attachment>
+		fire_attachment_A
+		<component>
+			fire_A
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\fire_A.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>fire_A</component>
+		</anim>
+	</attachment>
+	<attachment>
+		fire_attachment_B
+		<component>
+			fire_B
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\fire_B.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>fire_B</component>
+		</anim>
+	</attachment>
+	<attachment>
+		fire_attachment_C
+		<component>
+			fire_C
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\fire_C.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>fire_C</component>
+		</anim>
+	</attachment>
+	<attachment>
+		fire_attachment_D
+		<component>
+			fire_D
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\fire_D.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>fire_D</component>
+		</anim>
+	</attachment>
+	<attachment>
+		fire_attachment_E
+		<component>
+			fire_E
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\fire_E.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>fire_E</component>
+		</anim>
+	</attachment>
+	<attachment>
+		fire_attachment_F
+		<component>
+			fire_F
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\fire_F.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>fire_F</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ground_fire_attachment_A
+		<component>
+			ground_fire_A
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\ground_fire_A.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>ground_fire_A</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ground_fire_attachment_B
+		<component>
+			ground_fire_B
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\ground_fire_B.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>ground_fire_B</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ground_fire_attachment_C
+		<component>
+			ground_fire_C
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\ground_fire_C.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>ground_fire_C</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ground_fire_attachment_D
+		<component>
+			ground_fire_D
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\ground_fire_D.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>ground_fire_D</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ground_fire_attachment_E
+		<component>
+			ground_fire_E
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\ground_fire_E.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>ground_fire_E</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ground_fire_attachment_F
+		<component>
+			ground_fire_F
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\ground_fire_F.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>ground_fire_F</component>
+		</anim>
+	</attachment>
+	<attachment>
+		embers_attachment_A
+		<component>
+			embers_A
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\embers_A.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>embers_A</component>
+		</anim>
+	</attachment>
+	<attachment>
+		embers_attachment_B
+		<component>
+			embers_B
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\embers_B.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>embers_B</component>
+		</anim>
+	</attachment>
+	<attachment>
+		embers_attachment_C
+		<component>
+			embers_C
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\embers_C.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>embers_C</component>
+		</anim>
+	</attachment>
+	<attachment>
+		embers_attachment_D
+		<component>
+			embers_D
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\embers_D.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>embers_D</component>
+		</anim>
+	</attachment>
+	<attachment>
+		embers_attachment_E
+		<component>
+			embers_E
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\embers_E.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>embers_E</component>
+		</anim>
+	</attachment>
+	<attachment>
+		embers_attachment_F
+		<component>
+			embers_F
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\embers_F.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>embers_F</component>
+		</anim>
+	</attachment>
+	<attachment>
+		smoke_attachment_A
+		<component>
+			smoke_A
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\white_smoke_A.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke_A</component>
+		</anim>
+	</attachment>
+	<attachment>
+		smoke_attachment_B
+		<component>
+			smoke_B
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\white_smoke_B.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke_B</component>
+		</anim>
+	</attachment>
+	<attachment>
+		smoke_attachment_C
+		<component>
+			smoke_C
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\white_smoke_C.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke_C</component>
+		</anim>
+	</attachment>
+	<attachment>
+		smoke_attachment_D
+		<component>
+			smoke_D
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\white_smoke_D.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke_D</component>
+		</anim>
+	</attachment>
+	<attachment>
+		smoke_attachment_E
+		<component>
+			smoke_E
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\white_smoke_E.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke_E</component>
+		</anim>
+	</attachment>
+	<attachment>
+		smoke_attachment_F
+		<component>
+			smoke_F
+			<assetreference type="ParticleSystem">
+				<file>effects\smoke\white_smoke_F.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>smoke_F</component>
+		</anim>
+	</attachment>
+	<component>
+		fire_AA
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>effects\fire\directional_arrow</file>
+				</assetreference>
+				<attach a="fire_attachment_A" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="ground_fire_attachment_A" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="embers_attachment_A" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="smoke_attachment_A" frombone="attachpoint" tobone="attachpoint"/>
+				<decal>
+					<selectedtexture>shadows_selections\selection_square_32x32</selectedtexture>
+					<texture>effects\fire\scorch_mark</texture>
+					<width>2.0</width>
+					<height>2.0</height>
+				</decal>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>effects\fire\directional_arrow</file>
+				</assetreference>
+				<attach a="fire_attachment_B" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="ground_fire_attachment_B" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="embers_attachment_B" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="smoke_attachment_B" frombone="attachpoint" tobone="attachpoint"/>
+				<decal>
+					<selectedtexture>shadows_selections\selection_square_32x32</selectedtexture>
+					<texture>effects\fire\scorch_mark</texture>
+					<width>2.5</width>
+					<height>2.5</height>
+				</decal>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>effects\fire\directional_arrow</file>
+				</assetreference>
+				<attach a="fire_attachment_C" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="ground_fire_attachment_C" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="embers_attachment_C" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="smoke_attachment_C" frombone="attachpoint" tobone="attachpoint"/>
+				<decal>
+					<selectedtexture>shadows_selections\selection_square_32x32</selectedtexture>
+					<texture>effects\fire\scorch_mark</texture>
+					<width>3.0</width>
+					<height>3.0</height>
+				</decal>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>effects\fire\directional_arrow</file>
+				</assetreference>
+				<attach a="fire_attachment_D" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="ground_fire_attachment_D" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="embers_attachment_D" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="smoke_attachment_D" frombone="attachpoint" tobone="attachpoint"/>
+				<decal>
+					<selectedtexture>shadows_selections\selection_square_32x32</selectedtexture>
+					<texture>effects\fire\scorch_mark</texture>
+					<width>3.5</width>
+					<height>3.5</height>
+				</decal>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>effects\fire\directional_arrow</file>
+				</assetreference>
+				<attach a="fire_attachment_E" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="ground_fire_attachment_E" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="embers_attachment_E" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="smoke_attachment_E" frombone="attachpoint" tobone="attachpoint"/>
+				<decal>
+					<selectedtexture>shadows_selections\selection_square_32x32</selectedtexture>
+					<texture>effects\fire\scorch_mark</texture>
+					<width>4.0</width>
+					<height>4.0</height>
+				</decal>
+			</data>
+			<data>
+				<assetreference type="GrannyModel">
+					<file>effects\fire\directional_arrow</file>
+				</assetreference>
+				<attach a="fire_attachment_F" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="ground_fire_attachment_F" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="embers_attachment_F" frombone="attachpoint" tobone="attachpoint"/>
+				<attach a="smoke_attachment_F" frombone="attachpoint" tobone="attachpoint"/>
+				<decal>
+					<selectedtexture>shadows_selections\selection_square_32x32</selectedtexture>
+					<texture>effects\fire\scorch_mark</texture>
+					<width>4.5</width>
+					<height>4.5</height>
+				</decal>
+			</data>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>fire_AA</component>
+	</anim>
+</animfile>

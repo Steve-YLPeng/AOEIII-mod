@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="48958">IncaAura</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modelattachment>War of the Triple Alliance\Units\Inca\incaaura.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="48958">IncaAura2</name>
+		<type>AutoRangedModify</type>
+		<active>1</active>
+		<modifyexclusive>1</modifyexclusive>
+		<maxrange>24</maxrange>
+		<persistent>1</persistent>
+		<modifytype>MaxHP</modifytype>
+		<modifymultiplier>1.1</modifymultiplier>
+		<modelattachment>War of the Triple Alliance\Units\Inca\incaaura.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="700306">AutoGatherFood</name>
+		<type>AutoGather</type>
+		<active>0</active>
+		<persistent>1</persistent>
+		<Rate type ='Food'>0.250001</Rate>
+	</action>
+	<action>
+		<name stringid="69155">Heal</name>
+		<type>Heal</type>
+		<maxrange>12</maxrange>
+		<rate type="LogicalTypeHealed">50.0 </rate>
+		<anim>Heal</anim>
+	</action>
+	<tactic>
+		Normal
+		<action>IncaAura</action>
+		<action>IncaAura2</action>
+		<action>Autogatherfood</action>
+        <action>heal</action>
+	</tactic>
+</tactics>

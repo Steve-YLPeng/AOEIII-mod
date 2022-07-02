@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rmfilecrc>
+	<set name="asianrandom">4213687070</set>
+	<set name="fastrandom">858450612</set>
+	<set name="Largerandommaps">1614609835</set>
+	<set name="randommaps">848643543</set>
+	<map name="amazonia">292653583</map>
+	<map name="andes">1673769148</map>
+	<map name="araucania">716168091</map>
+	<map name="bayou">1017449742</map>
+	<map name="borneo">2988799121</map>
+	<map name="california">2203360616</map>
+	<map name="caribbean">2818947527</map>
+	<map name="carolina">178842968</map>
+	<map name="carolinaLarge">36714904</map>
+	<map name="Ceylon">2805056970</map>
+	<map name="deccan">4003423297</map>
+	<map name="deccanLarge">1702231891</map>
+	<map name="great lakes">2780393609</map>
+	<map name="great plains">1585911643</map>
+	<map name="great plainsLarge">2400347813</map>
+	<map name="himalayas">727925521</map>
+	<map name="himalayasUpper">3080802214</map>
+	<map name="Hispaniola">2333257818</map>
+	<map name="honshu">1882658140</map>
+	<map name="honshuRegicide">2658104258</map>
+	<map name="indochina">2069471575</map>
+	<map name="mongolia">3221913270</map>
+	<map name="new england">4156539956</map>
+	<map name="northwest territory">2302695294</map>
+	<map name="Orinoco">1765041749</map>
+	<map name="ozarks">3441027103</map>
+	<map name="painted desert">2914583187</map>
+	<map name="pampas">677095103</map>
+	<map name="patagonia">571025273</map>
+	<map name="plymouth">85377997</map>
+	<map name="rockies">59627101</map>
+	<map name="saguenay">46583879</map>
+	<map name="saguenayLarge">3437606747</map>
+	<map name="siberia">1572917104</map>
+	<map name="siberiaLarge">72084085</map>
+	<map name="silkRoad">3336990508</map>
+	<map name="silkRoadLarge">529377752</map>
+	<map name="sonora">2596958544</map>
+	<map name="sonoraLarge">66951844</map>
+	<map name="texas">2940354677</map>
+	<map name="texasLarge">2668800725</map>
+	<map name="unknown">1805703687</map>
+	<map name="yellow riverDry">3850453086</map>
+	<map name="yellow riverLarge">1542738559</map>
+	<map name="yucatan">941600452</map>
+	<map name="yukon">3418916082</map>
+</rmfilecrc>

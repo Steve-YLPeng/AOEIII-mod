@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>Bone_Main</definebone>
+		<component>
+			Bone_Main
+			<assetreference type="GrannyModel">
+				<file>units\air\SopwithCamel\SopwithCamel_flying</file>
+					<replacetexture>
+						<from>units\air\SopwithCamel\sopwith</from>
+						<to>units\air\SopwithCamel\SopwithCamel</to>
+					</replacetexture>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>Bone_Main</component>
+		</anim>
+</animfile>
+		

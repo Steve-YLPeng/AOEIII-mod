@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="38142">TrampleHandAttack</name>
+		<type>TruckAttack</type>
+		<maxrange>8</maxrange>
+		<rate type="All">1.0 </rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>Idle</anim>
+		<idleanim>Idle</idleanim>
+		<damage>6.5</damage>
+		<rof>1.0</rof>
+		<targetspeedboost>1</targetspeedboost>
+		<basedamagecap>1</basedamagecap>
+		<persistent>1</persistent>
+		<projectile>InvisibleProjectileNoTracer</projectile>
+		<throw>1</throw>
+		<impactforcemin>1000.0f</impactforcemin>
+		<impactforcemax>1600.0f</impactforcemax>
+		<outerdamageareadistance>.25</outerdamageareadistance>
+		<outerdamageareafactor>.20</outerdamageareafactor>
+		<impactlaunchangle>85.0</impactlaunchangle>
+		<areasortmode>Directional</areasortmode>
+	</action>
+	<action>
+		<name stringid="68994">FrightenSpeed</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>1</active>
+		<maxrange>2</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Speed</modifytype>
+		<modifymultiplier>0.7</modifymultiplier>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">FrightenSpeed2</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>1</active>
+		<maxrange>6</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Speed</modifytype>
+		<modifymultiplier>0.7</modifymultiplier>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="68994">FrightenSpeed3</name>
+		<type>AutoRangedModify</type>
+		<targetenemy>1</targetenemy>
+		<active>1</active>
+		<maxrange>12</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Speed</modifytype>
+		<modifymultiplier>0.7</modifymultiplier>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<!-- <action>
+		<dbaction>BoatManager</dbaction>
+		<name stringid="69156">BoatManager</name>
+		<type>BoatManager</type>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<dbaction>BoatManager</dbaction>
+		<name stringid="69156">BoatManager2</name>
+		<type>BoatManager</type>
+		<persistent>1</persistent>
+	</action> -->
+	<action>
+      <dbaction>Move</dbaction>
+      <name stringid="69156">Move</name>
+      <type>Move</type>
+      <persistent>1</persistent>
+   </action>
+	<tactic>
+		Melee
+		<action>TrampleHandAttack</action>
+		<action>FrightenSpeed</action>
+		<action>FrightenSpeed2</action>
+		<action>FrightenSpeed3</action>
+		<runaway>0</runaway>
+		<idleanim>Idle</idleanim>
+		<boredanim>Idle</boredanim>
+		<deathanim>Death</deathanim>
+		<walkanim>Idle</walkanim>
+		<joganim>Idle</joganim>
+		<runanim>Idle</runanim>
+		<action>BoatManager</action>
+		<action>BoatManager2</action>
+	    <action>Move</action>
+	</tactic>
+</tactics>

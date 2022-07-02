@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animfile>
+    <definebone>bone01</definebone>
+    <definebone>bone02</definebone>
+    <definebone>bone03</definebone>
+    <definebone>bone11</definebone>
+    <definebone>bone07</definebone>
+    <definebone>bone05</definebone>
+    <definebone>bone10</definebone>
+    <definebone>bone06</definebone>
+    <definebone>bone08</definebone>
+    <definebone>bone13</definebone>
+    <definebone>bone22</definebone>
+    <attachment>
+        treb2
+        <component>
+            ModelComp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\treb_arm1</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </attachment>
+    <attachment>
+        treb3
+        <component>
+            ModelComp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\treb_arm2</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </attachment>
+    <attachment>
+        treb_wheel
+        <component>
+            ModelComp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\treb_wheel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </attachment>
+    <attachment>
+        treb_wheel2
+        <component>
+            ModelComp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\treb_wheel2</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </attachment>
+    <attachment>
+        treb_wheel3
+        <component>
+            ModelComp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\treb_wheel3</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </attachment>
+    <attachment>
+        treb_sling
+        <component>
+            ModelComp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\treb_sling</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </attachment>
+    <attachment>
+        treb_wheel4
+        <component>
+            ModelComp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\treb_wheel4</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </attachment>
+    <component>
+        ModelComp
+        <assetreference type="GrannyModel">
+            <file>units\KnB\Trebuchet\treb_skeleton</file>
+        </assetreference>
+        <attach a="treb2" frombone="Object01" tobone="bone01" syncanims="0" />
+        <attach a="treb3" frombone="Object01" tobone="bone03" syncanims="0" />
+        <attach a="treb_wheel" frombone="Object01" tobone="bone06" syncanims="0" />
+        <attach a="treb_wheel2" frombone="Object01" tobone="bone10" syncanims="0" />
+        <attach a="treb_wheel3" frombone="Object01" tobone="bone07" syncanims="0" />
+        <attach a="treb_wheel4" frombone="Object01" tobone="bone11" syncanims="0" />
+        <attach a="treb_sling" frombone="Object01" tobone="bone22" syncanims="0" />
+        <attach a="treb_rs" frombone="Object01" tobone="tt" syncanims="1" />
+    </component>
+    <anim>
+        Idle
+        <component>ModelComp</component>
+    </anim>
+    <anim>
+        Bombard_ranged_attack
+        <assetreference type="GrannyAnim">
+            <file>units\KnB\Trebuchet\Trebuchet_shooting</file>
+        </assetreference>
+        <component>ModelComp</component>
+    </anim>
+</animfile>

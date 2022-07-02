@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animfile>
+    <definebone>bone01</definebone>
+    <definebone>bone02</definebone>
+    <definebone>bone03</definebone>
+    <definebone>bone04</definebone>
+    <submodel>
+        treb100
+        <!--Trebuchet completed-->
+        <attachment>
+            treb_death
+            <component>
+                ModelComp
+                <assetreference type="GrannyModel">
+                    <file>units\KnB\Trebuchet\trebuchet_destruction</file>
+                    <replacetexture>
+                        <from>seige_equipment_texture</from>
+                        <to>units\KnB\trebuchet\trebuchet_destruction</to>
+                    </replacetexture>
+                </assetreference>
+            </component>
+            <anim>
+                Idle
+                <component>ModelComp</component>
+            </anim>
+            <anim>
+                Death
+                <assetreference type="GrannyAnim">
+                    <file>units\KnB\Trebuchet\trebuchet_destruction</file>
+                </assetreference>
+                <component>ModelComp</component>
+            </anim>
+        </attachment>
+        <attachment>
+            skeleton
+            <include>units\KnB\Trebuchet\trebuchet_main.xml</include>
+        </attachment>
+        <attachment>
+            treb1
+            <component>
+                ModelComp
+                <assetreference type="GrannyModel">
+                    <file>units\KnB\Trebuchet\treb_base</file>
+                </assetreference>
+            </component>
+            <anim>
+                Idle
+                <component>ModelComp</component>
+            </anim>
+        </attachment>
+        <component>
+            ModelComp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="skeleton" frombone="bone05" tobone="Bone03" syncanims="1" />
+            <attach a="treb1" frombone="bone05" tobone="Bone03" syncanims="0" />
+        </component>
+        <component>
+            Death
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="treb_death" frombone="no existing bone" tobone="Bone04" syncanims="1" />
+        </component>
+        <anim>
+            Idle
+            <component>Modelcomp</component>
+        </anim>
+        <anim>
+            Reload
+            <component>ModelComp</component>
+        </anim>
+        <anim>
+            CannonAttack
+            <assetreference type="GrannyAnim">
+                <file>units\KnB\Trebuchet\trebuchet_shooting</file>
+                <tag type="Attack">0.84</tag>
+                <tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.02</tag>
+                <tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.24</tag>
+                <tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.50</tag>
+                <tag type="SpecificSoundSet" checkvisible="1" set="Catapultattacks">0.82</tag>
+            </assetreference>
+            <component>ModelComp</component>
+        </anim>
+        <anim>
+            Death
+            <assetreference type="GrannyAnim">
+                <file>units\KnB\Trebuchet\trebuchet_destruction</file>
+            </assetreference>
+            <component>Death</component>
+        </anim>
+    </submodel>
+    <!--Building Trebuchet-->
+    <submodel>
+        treb0
+        <attachment>
+            treb1
+            <component>
+                blockhouse
+                <assetreference type="GrannyModel">
+                    <file>units\KnB\Trebuchet\trebuchet_packed_01</file>
+                </assetreference>
+            </component>
+            <anim>
+                Idle
+                <component>blockhouse</component>
+            </anim>
+        </attachment>
+        <component>
+            Modelcomp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="treb1" frombone="no existing bone" tobone="Bone04" syncanims="0" />
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </submodel>
+    <submodel>
+        treb10
+        <attachment>
+            treb1
+            <component>
+                blockhouse
+                <assetreference type="GrannyModel">
+                    <file>units\KnB\Trebuchet\trebuchet_packed_02</file>
+                </assetreference>
+            </component>
+            <anim>
+                Idle
+                <component>blockhouse</component>
+            </anim>
+        </attachment>
+        <component>
+            Modelcomp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="treb1" frombone="no existing bone" tobone="Bone04" syncanims="0" />
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </submodel>
+    <submodel>
+        treb20
+        <attachment>
+            treb1
+            <component>
+                blockhouse
+                <assetreference type="GrannyModel">
+                    <file>units\KnB\Trebuchet\trebuchet_packed_03</file>
+                </assetreference>
+            </component>
+            <anim>
+                Idle
+                <component>blockhouse</component>
+            </anim>
+        </attachment>
+        <component>
+            Modelcomp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="treb1" frombone="no existing bone" tobone="Bone04" syncanims="0" />
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </submodel>
+    <submodel>
+        treb30
+        <attachment>
+            treb1
+            <component>
+                blockhouse
+                <assetreference type="GrannyModel">
+                    <file>units\KnB\Trebuchet\trebuchet_packed_04</file>
+                </assetreference>
+            </component>
+            <anim>
+                Idle
+                <component>blockhouse</component>
+            </anim>
+        </attachment>
+        <component>
+            Modelcomp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="treb1" frombone="no existing bone" tobone="Bone04" syncanims="0" />
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </submodel>
+    <submodel>
+        treb40
+        <attachment>
+            treb1
+            <component>
+                blockhouse
+                <assetreference type="GrannyModel">
+                    <file>units\KnB\Trebuchet\trebuchet_packed_05</file>
+                </assetreference>
+            </component>
+            <anim>
+                Idle
+                <component>blockhouse</component>
+            </anim>
+        </attachment>
+        <component>
+            Modelcomp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="treb1" frombone="no existing bone" tobone="Bone04" syncanims="0" />
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </submodel>
+    <submodel>
+        treb50
+        <attachment>
+            treb1
+            <component>
+                blockhouse
+                <assetreference type="GrannyModel">
+                    <file>units\KnB\Trebuchet\trebuchet_packed_06</file>
+                </assetreference>
+            </component>
+            <anim>
+                Idle
+                <component>blockhouse</component>
+            </anim>
+        </attachment>
+        <component>
+            Modelcomp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="treb1" frombone="no existing bone" tobone="Bone04" syncanims="0" />
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </submodel>
+    <submodel>
+        treb60
+        <attachment>
+            treb1
+            <component>
+                blockhouse
+                <assetreference type="GrannyModel">
+                    <file>units\KnB\Trebuchet\trebuchet_packed_07</file>
+                </assetreference>
+            </component>
+            <anim>
+                Idle
+                <component>blockhouse</component>
+            </anim>
+        </attachment>
+        <component>
+            Modelcomp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="treb1" frombone="no existing bone" tobone="Bone04" syncanims="0" />
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </submodel>
+    <submodel>
+        treb70
+        <attachment>
+            treb1
+            <component>
+                blockhouse
+                <assetreference type="GrannyModel">
+                    <file>units\KnB\Trebuchet\trebuchet_packed_08</file>
+                </assetreference>
+            </component>
+            <anim>
+                Idle
+                <component>blockhouse</component>
+            </anim>
+        </attachment>
+        <component>
+            Modelcomp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="treb1" frombone="no existing bone" tobone="Bone04" syncanims="0" />
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </submodel>
+    <submodel>
+        treb00
+        <component>
+            Modelcomp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\pos</file>
+            </assetreference>
+            <attach a="treb1" frombone="no existing bone" tobone="Bone04" syncanims="0" />
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </submodel>
+    <component>
+        <logic type="BuildingCompletion">
+            <p0>
+                <submodelref ref="treb00" />
+            </p0>
+            <p1>
+                <submodelref ref="treb0" />
+            </p1>
+            <p12>
+                <submodelref ref="treb10" />
+            </p12>
+            <p25>
+                <submodelref ref="treb20" />
+            </p25>
+            <p37>
+                <submodelref ref="treb30" />
+            </p37>
+            <p50>
+                <submodelref ref="treb40" />
+            </p50>
+            <p62>
+                <submodelref ref="treb50" />
+            </p62>
+            <p75>
+                <submodelref ref="treb60" />
+            </p75>
+            <p87>
+                <submodelref ref="treb70" />
+            </p87>
+            <p100>
+                <submodelref ref="treb100" />
+            </p100>
+        </logic>
+    </component>
+</animfile>

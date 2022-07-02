@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>Bone_rain</definebone>
+	<definebone>bone crest</definebone>
+	<attachment>
+		attachement_wave crest particle
+		<component>
+			wave crest particle
+			<notshadowcaster/>
+			<assetreference type="ParticleSystem">
+				<file>effects\waves\crest.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			<component>wave crest particle</component>
+		</anim>
+	</attachment>
+	<attachment>
+		wave mesh
+		<component>
+			wave mesh
+			<notshadowcaster/>
+			<assetreference type="GrannyModel">
+				<file>terrain\waves\waves1</file>
+			</assetreference>
+		</component>
+		<anim>
+			<component>wave mesh</component>
+		</anim>
+	</attachment>
+	<attachment>
+		rain_attachment_A
+		<component>
+			rain_particles
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\rain_light.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>rain_particles</component>
+		</anim>
+	</attachment>
+	<attachment>
+		rain_splat_attachment_A
+		<component>
+			rain_splat_particles
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\rain_splat.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>rain_splat_particles</component>
+		</anim>
+	</attachment>
+	<component>
+		rain
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>effects\weather\rain_base</file>
+				</assetreference>
+				<!-- <attach a="rain_attachment_A" frombone="Attachpoint" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="rain_splat_attachment_A" frombone="Attachpoint" tobone="Bone Master" syncanims="0"/>	 -->			
+			</data>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>rain</component>
+	</anim>
+</animfile>

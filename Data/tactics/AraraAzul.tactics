@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tactics>
+	<action>
+		<name stringid="70308">FlameAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Bombard_ranged_attack</anim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>1.0</unintentionaldamagemultiplier>
+		<impacteffect>effects\impacts\torch</impacteffect>
+		<rate type="All">1.0 </rate>
+		<perfectaccuracy>1</perfectaccuracy>
+	</action>
+	<action>
+		<name stringid="38127">VolleyRangedAttack</name>
+		<type>Attack</type>
+		<active>1</active>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<maxheight>0.5</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>Blowdart</projectile>
+		<minrange>1</minrange>
+		<rate type="Unit">1.0 </rate>
+	</action>
+	<action>
+		<name stringid="38127">VolleyRangedAttack2</name>
+		<type>Attack</type>
+		<active>0</active>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack2</anim>
+		<maxheight>0.5</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>Blowdart</projectile>
+		<minrange>1</minrange>
+		<rate type="Unit">1.0 </rate>
+	</action>
+	<action>
+		<name stringid="200019">JFS</name>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>AbstractRangedInfantry</modifyabstracttype>
+		<active>1</active>
+		<maxrange>20</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.03</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="200019">JFS2</name>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>AbstractRangedCavalry</modifyabstracttype>
+		<active>1</active>
+		<maxrange>20</maxrange>
+		<persistent>1</persistent>
+		<modifytype>Damage</modifytype>
+		<modifymultiplier>1.03</modifymultiplier>
+		<modelattachment>effects\ypack_auras\daimyopower.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<dbaction>BoatManager</dbaction>
+		<name stringid="69156">BoatManager</name>
+		<type>BoatManager</type>
+		<persistent>1</persistent>
+	</action>
+	<action>
+		<dbaction>BoatManager</dbaction>
+		<name stringid="69156">BoatManager2</name>
+		<type>BoatManager</type>
+		<persistent>1</persistent>
+	</action>
+	<action>
+      <dbaction>Move</dbaction>
+      <name stringid="69156">Move</name>
+      <type>Move</type>
+      <persistent>1</persistent>
+   </action>
+	<tactic>
+		Volley
+		<!-- <action priority="75">FlameAttack</action> -->
+		<action priority="75">VolleyRangedAttack2</action>
+		<action priority="70">VolleyRangedAttack</action>
+		<action>JFS</action>
+		<action>JFS2</action>
+		<action>BoatManager</action>
+		<action>BoatManager2</action>
+		<!-- <action>Move</action> -->
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<autoretarget>1</autoretarget>
+		<throw>1</throw>
+		<exclusive>1</exclusive>
+		<!-- <deathanim>Walk</deathanim>
+		<idleanim>Walk</idleanim>
+		<boredanim>Walk</boredanim>
+		<walkanim>Walk</walkanim>
+		<joganim>Walk</joganim>
+		<runanim>Walk</runanim> -->
+	</tactic>
+</tactics>

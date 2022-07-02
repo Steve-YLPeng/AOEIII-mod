@@ -1,0 +1,252 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_ammo</definebone>
+	<definebone>bone_wheelRight</definebone>
+	<definebone>bone_wheelLeft</definebone>
+	<definebone>bone_launchpoint</definebone>
+	<definebone>bone_muzzle</definebone>
+	<component>
+		gatling_gun
+		<logic type="LowPoly">
+			<normal>
+				<logic type="Tech">
+					<none>
+			<assetreference type="GrannyModel">
+				<file>War of the Triple Alliance\Units\Great War\airplane\SopwithCamel_flying</file>
+					<replacetexture>
+						<from>units\air\SopwithCamel\sopwith</from>
+						<to>War of the Triple Alliance\Units\Great War\airplane\SopwithCamel</to>
+					</replacetexture>
+			</assetreference>
+					</none>
+				</logic>
+			</normal>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>4.50</width>
+			<height>4.00</height>
+			<xoffset>0.00</xoffset>
+			<zoffset>0.15</zoffset>
+		</decal>
+		<watersplash>
+			<texture>units\artillery\cannon\wheel_B</texture>
+			<width>1.75</width>
+			<height>2.00</height>
+		</watersplash>
+	</component>
+	<component>
+		gatling_gun2
+		<notshadowcaster/>
+		<assetreference type="ParticleSystem">
+			<file>explosionsmall</file>
+		</assetreference>
+	</component>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		Jog
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		idle
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		bored
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>animation_library\artillery\gatling_gun\bombard_death</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.11</tag>
+			<tag type="Particles" particlename="explosionlarge">0.01</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="BuildingPartImpact">0.05</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="BuildingPartImpact">0.08</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.12</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.16</tag>
+		</assetreference>
+		<component>gatling_gun2</component>
+	</anim>
+	<anim>
+		Death_by_melee
+		<assetreference type="GrannyAnim">
+			<file>animation_library\artillery\gatling_gun\bombard_death</file>
+			<tag type="Particles" particlename="explosionlarge">0.01</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.12</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="BuildingPartImpact">0.08</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="BuildingPartImpact">0.05</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.11</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.16</tag>
+		</assetreference>
+		<component>gatling_gun2</component>
+	</anim>
+	<anim>
+		Death_by_range
+		<assetreference type="GrannyAnim">
+			<file>animation_library\artillery\gatling_gun\bombard_death</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.12</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="BuildingPartImpact">0.08</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="BuildingPartImpact">0.05</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.11</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.16</tag>
+		</assetreference>
+		<component>gatling_gun2</component>
+	</anim>
+	<anim>
+		Cheer
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		Bombard_ranged_idle
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		Bombard_ranged_attack
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+			<tag type="Attack">0.27</tag>
+			<tag type="Attack">0.41</tag>
+			<tag type="Attack">0.55</tag>
+			<tag type="Attack">0.68</tag>
+			<tag type="Attack">0.74</tag>
+			<tag type="Attack">0.81</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="AirplaneShoot">0.27</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="AirplaneShoot">0.57</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="AirplaneShoot">0.87</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.27</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.34</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.40</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.47</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.54</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.60</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.67</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.73</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.80</tag>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		Bombard_aim
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+		<attach a="ammo_attach" frombone="ATTACHPOINT" tobone="MASTER" syncanims="0"/>
+	</anim>
+	<anim>
+		Bombard_reload
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+		<attach a="ammo_attach" frombone="ATTACHPOINT" tobone="MASTER" syncanims="0"/>
+	</anim>
+	<anim>
+		Bombard_bored
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+		<attach a="ammo_attach" frombone="ATTACHPOINT" tobone="MASTER" syncanims="0"/>
+	</anim>
+	<anim>
+		Bombard_melee_idle
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+		<attach a="ammo_attach" frombone="ATTACHPOINT" tobone="MASTER" syncanims="0"/>
+	</anim>
+	<anim>
+		Bombard_melee_attack
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+			<tag type="Attack">0.27</tag>
+			<tag type="Attack">0.41</tag>
+			<tag type="Attack">0.55</tag>
+			<tag type="Attack">0.68</tag>
+			<tag type="Attack">0.74</tag>
+			<tag type="Attack">0.81</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="GatlingGunShoot">0.27</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.27</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.34</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.40</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.47</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.54</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.60</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.67</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.73</tag>
+			<tag type="Particles" particlename="organgunmuzzle01">0.80</tag>
+		</assetreference>
+		<component>gatling_gun</component>
+		<attach a="ammo_attach" frombone="ATTACHPOINT" tobone="MASTER" syncanims="0"/>
+	</anim>
+	<anim>
+		Bombard_walk
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		Bombard_jog
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		Bombard_run
+		<assetreference type="GrannyAnim">
+						<file>homecity\gatherpoint_flags\hc_waterspawn_flag_anim</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		Bombard_limber
+		<assetreference type="GrannyAnim">
+			<file>animation_library\artillery\gatling_gun\limber</file>
+		</assetreference>
+		<component>gatling_gun</component>
+	</anim>
+	<anim>
+		Bombard_unlimber
+		<assetreference type="GrannyAnim">
+			<file>animation_library\artillery\gatling_gun\unlimber</file>
+		</assetreference>
+		<component>gatling_gun</component>
+		<attach a="ammo_attach" frombone="ATTACHPOINT" tobone="MASTER" syncanims="0"/>
+	</anim>
+</animfile>

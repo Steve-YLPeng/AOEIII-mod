@@ -1,0 +1,204 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_launchpoint01</definebone>
+	<definebone>bone_launchpoint02</definebone>
+	<attachment>
+		Emitter2
+		<component>
+			emitter2
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\gc_clouds_medium1.particle</file>
+		<replacetexture>
+			<from>effects\invisible</from>
+			<to>effects\weather\cloud_06</to>
+		</replacetexture>
+			</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>5.00</width>
+			<height>5.00</height>
+		</decal>
+
+		</component>
+		<anim>
+			None
+			<component>emitter2</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Emitter3
+		<component>
+			emitter3
+			<assetreference type="ParticleSystem">
+				<file>effects\explosions\1exp_flash.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter3</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Emitter5
+		<component>
+			emitter5
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\1lightning.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter5</component>
+		</anim>
+	</attachment>
+	<attachment>
+		muzzleFlash
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\animal particles\lazerMuzzle.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		godRaysLeft
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\animal particles\lazerGodRays_left.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		godRaysRight
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\animal particles\lazerGodRays_Right.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<linksection>
+			<linkoffset>.1</linkoffset>
+			<linkcomponent>bear_lazer</linkcomponent>
+			<linkconstraint>0</linkconstraint>
+		</linksection>
+		<linksection>
+			<linkoffset>-1.6</linkoffset>
+			<linkcomponent>Bmonkey</linkcomponent>
+			<linkconstraint>1</linkconstraint>
+			<linkcomponent>monkey</linkcomponent>
+		</linksection>
+		<assetreference type="GrannyModel">
+			<file>units\animals\bear\bear_lazer2</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+			<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+			<width>1.00</width>
+			<height>1.00</height>
+		</decal>
+		<attach a="Emitter2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+
+		<attach a="Emitter4" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+
+	</component>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Volley_standing_attack
+		<assetreference type="GrannyAnim">,
+			<file>animation_library\special\lazerbear\volley_standing_attack</file>
+			<tag type="Attack">0.00</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="WOTTAthunderattack">0.10</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="muzzleFlash" frombone="ATTACHPOINT" tobone="bone_launchpoint01" syncanims="0"/>
+		<attach a="muzzleFlash" frombone="ATTACHPOINT" tobone="bone_launchpoint02" syncanims="0"/>
+		<attach a="godRaysLeft" frombone="ATTACHPOINT" tobone="bone_launchpoint01" syncanims="0"/>
+		<attach a="godRaysRight" frombone="ATTACHPOINT" tobone="bone_launchpoint02" syncanims="0"/>
+		<attach a="Emitter3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Emitter5" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\walk</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\boredA</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\boredB</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Charge_attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\volley_standing_attack</file>
+			<tag type="Attack">0.25</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="LazerBearShoot">0.25</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="muzzleFlash" frombone="ATTACHPOINT" tobone="bone_launchpoint01" syncanims="0"/>
+		<attach a="muzzleFlash" frombone="ATTACHPOINT" tobone="bone_launchpoint02" syncanims="0"/>
+		<attach a="godRaysLeft" frombone="ATTACHPOINT" tobone="bone_launchpoint01" syncanims="0"/>
+		<attach a="godRaysRight" frombone="ATTACHPOINT" tobone="bone_launchpoint02" syncanims="0"/>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\death</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.40</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Raze_attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\volley_standing_attack</file>
+			<tag type="Attack">0.25</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="LazerBearShoot">0.25</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="muzzleFlash" frombone="ATTACHPOINT" tobone="bone_launchpoint01" syncanims="0"/>
+		<attach a="muzzleFlash" frombone="ATTACHPOINT" tobone="bone_launchpoint02" syncanims="0"/>
+		<attach a="godRaysLeft" frombone="ATTACHPOINT" tobone="bone_launchpoint01" syncanims="0"/>
+		<attach a="godRaysRight" frombone="ATTACHPOINT" tobone="bone_launchpoint02" syncanims="0"/>
+	</anim>
+	<anim>
+		Raze_Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\special\lazerbear\idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

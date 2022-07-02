@@ -1,0 +1,591 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>Bip 01 master</definebone>
+	<definebone>Bip01 Prop1</definebone>
+	<definebone>Bone_Hat</definebone>
+	<definebone>bone_bag</definebone>
+	<definebone>SPINE1</definebone>
+	<attachment>
+		hat
+			<component>
+			hat
+		<assetreference type="GrannyModel">
+							<file>units\spc\miner\miner_hat</file>
+							<replacetexture>
+								<from>units\spc\miner\miner</from>
+								<to>War of the Triple Alliance\Units\Gaucho\gauchorider</to>
+							</replacetexture>
+						</assetreference>
+			</component>
+		<anim>
+			Idle
+			<component>hat</component>
+		</anim>
+	</attachment>
+
+	<attachment>
+		bag
+		<component>
+			bag
+			<assetreference type="GrannyModel">
+				<file>units\spc\miner\miner_bag</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>bag</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_bola
+		<component>
+			attachment_bola
+			<assetreference type="GrannyModel">
+				<file>units\natives\attachment_bola</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>attachment_bola</component>
+		</anim>
+		<include>units\natives\attachment_bola.xml</include>
+	</attachment>
+<attachment>
+		sling
+		<component>
+			sling
+			<assetreference type="GrannyModel">
+				<file>units\natives\aztec\macehuatlin\macehuatlin_sling_01</file>
+			</assetreference>
+		</component>
+		<anim>
+			HandAttack
+			<assetreference type="GrannyAnim">
+				<file>animation_library\natives\macehuatlin\sling\charge_attack1</file>
+			</assetreference>
+			<component>sling</component>
+		</anim>
+		<anim>
+			RangedAttack
+			<assetreference type="GrannyAnim">
+				<file>animation_library\natives\macehuatlin\sling\volley_attack1</file>
+			</assetreference>
+			<component>sling</component>
+		</anim>
+		<anim>
+			reload
+			<assetreference type="GrannyAnim">
+				<file>animation_library\natives\macehuatlin\sling\volley_reload</file>
+			</assetreference>
+			<component>sling</component>
+		</anim>
+		<anim>
+			Idle
+			<assetreference type="GrannyAnim">
+				<file>animation_library\natives\macehuatlin\sling\charge_idle</file>
+			</assetreference>
+			<component>sling</component>
+		</anim>
+		<anim>
+			Bored
+			<assetreference type="GrannyAnim">
+				<file>animation_library\natives\macehuatlin\sling\charge_idle</file>
+			</assetreference>
+			<component>sling</component>
+		</anim>
+		<anim>
+			Walk
+			<assetreference type="GrannyAnim">
+				<file>animation_library\natives\macehuatlin\sling\walk</file>
+			</assetreference>
+			<component>sling</component>
+		</anim>
+		<anim>
+			Jog
+			<assetreference type="GrannyAnim">
+				<file>animation_library\natives\macehuatlin\sling\jog</file>
+			</assetreference>
+			<component>sling</component>
+		</anim>
+		<anim>
+			Run
+			<assetreference type="GrannyAnim">
+				<file>animation_library\natives\macehuatlin\sling\run</file>
+			</assetreference>
+			<component>sling</component>
+		</anim>
+	</attachment>
+		<attachment>
+			pickaxe
+			<component>
+				pickaxe
+				<assetreference type="GrannyModel">
+					<file>units\attachments\pickaxe_villager</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>pickaxe</component>
+			</anim>
+		</attachment>
+	<attachment>
+		axe
+		<component>
+			axe
+			<assetreference type="GrannyModel">
+				<file>units\attachments\axe_villager</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>axe</component>
+		</anim>
+	</attachment>
+		<attachment>
+			hoe
+			<component>
+				hoe
+				<assetreference type="GrannyModel">
+					<file>units\attachments\hoe_villager</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>hoe</component>
+			</anim>
+		</attachment>
+		<attachment>
+			hammer
+			<component>
+				hammer
+				<assetreference type="GrannyModel">
+					<file>units\attachments\hammer_villager</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>hammer</component>
+			</anim>
+		</attachment>
+		<attachment>
+			bowl
+			<component>
+				bowl
+				<assetreference type="GrannyModel">
+					<file>units\attachments\bowl_villager</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>bowl</component>
+			</anim>
+		</attachment>
+		<attachment>
+			knife
+			<component>
+				knife
+				<assetreference type="GrannyModel">
+					<file>units\attachments\knife_villager</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>knife</component>
+			</anim>
+		</attachment>
+		<attachment>
+			bucket
+			<component>
+				bucket
+				<assetreference type="GrannyModel">
+					<file>units\attachments\bucket_villager</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>bucket</component>
+			</anim>
+		</attachment>
+		<attachment>
+			torch
+			<include>effects\projectiles\torch.xml</include>
+		</attachment>
+		<attachment>
+			bucketWater
+			<component>
+				waterFX
+				<assetreference type="ParticleSystem">
+					<file>effects\water_effects\bucket_water.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				None
+				<component>waterFX</component>
+			</anim>
+		</attachment>
+		<attachment>
+			measure tape
+			<component>
+				measure tape
+				<assetreference type="GrannyModel">
+					<file>units\attachments\measuring_tape</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>measure tape</component>
+			</anim>
+		</attachment>
+		<attachment>
+			saw
+			<component>
+				saw_villager
+				<assetreference type="GrannyModel">
+					<file>units\attachments\saw_villager</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>saw_villager</component>
+			</anim>
+		</attachment>
+
+
+
+
+	<attachment>
+		spear
+		<component>
+			spear
+			<logic type="LowPoly">
+				<normal>
+					<assetreference type="GrannyModel">
+						<file>units\natives\attachment_dogsoldier_spear</file>
+					</assetreference>
+				</normal>
+				<lowpoly/>
+			</logic>
+		</component>
+		<anim>
+			Idle
+			<component>spear</component>
+		</anim>
+	</attachment>
+		<component>
+			ModelComp
+		<logic type="Tech">
+			<none>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+						<file>units\natives\lakota\bow_rider\bow_rider_1</file>
+							<replacetexture>
+								<from>units\natives\lakota\bow_rider\bow_rider_1</from>
+								<to>War of the Triple Alliance\Units\Natives\Chola\Chola</to>
+							</replacetexture>
+					</assetreference>
+					<attach a="hat" frombone="bone_hat" tobone="HEAD" syncanims="0"/>
+					<attach a="bag" frombone="bone_bag" tobone="R THIGH" syncanims="0"/>
+					</normal>
+					<lowpoly>
+						<assetreference type="GrannyModel">
+						<file>units\natives\lakota\bow_rider\bow_rider_1</file>
+							<replacetexture>
+								<from>units\natives\lakota\bow_rider\bow_rider_1</from>
+								<to>War of the Triple Alliance\Units\Natives\Chola\Chola</to>
+							</replacetexture>
+					</assetreference>
+					<attach a="hat" frombone="bone_hat" tobone="HEAD" syncanims="0"/>
+					<attach a="bag" frombone="bone_bag" tobone="R THIGH" syncanims="0"/>
+					</lowpoly>
+				</logic>
+			</none>
+			<elitebowrider>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+						<file>units\natives\lakota\bow_rider\bow_rider_1</file>
+							<replacetexture>
+								<from>units\natives\lakota\bow_rider\bow_rider_1</from>
+								<to>War of the Triple Alliance\Units\Natives\Chola\CholaI</to>
+							</replacetexture>
+					</assetreference>
+					<attach a="hat" frombone="bone_hat" tobone="HEAD" syncanims="0"/>
+					<attach a="bag" frombone="bone_bag" tobone="R THIGH" syncanims="0"/>
+					</normal>
+					<lowpoly>
+						<assetreference type="GrannyModel">
+						<file>units\natives\lakota\bow_rider\bow_rider_1</file>
+							<replacetexture>
+								<from>units\natives\lakota\bow_rider\bow_rider_1</from>
+								<to>War of the Triple Alliance\Units\Natives\Chola\CholaI</to>
+							</replacetexture>
+					</assetreference>
+					<attach a="hat" frombone="bone_hat" tobone="HEAD" syncanims="0"/>
+					<attach a="bag" frombone="bone_bag" tobone="R THIGH" syncanims="0"/>
+					</lowpoly>
+				</logic>
+			</elitebowrider>
+			<championbowrider>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+						<file>units\natives\lakota\bow_rider\bow_rider_1</file>
+							<replacetexture>
+								<from>units\natives\lakota\bow_rider\bow_rider_1</from>
+								<to>War of the Triple Alliance\Units\Natives\Chola\CholaII</to>
+							</replacetexture>
+					</assetreference>
+					<attach a="hat" frombone="bone_hat" tobone="HEAD" syncanims="0"/>
+					<attach a="bag" frombone="bone_bag" tobone="R THIGH" syncanims="0"/>
+					</normal>
+					<lowpoly>
+						<assetreference type="GrannyModel">
+						<file>units\natives\lakota\bow_rider\bow_rider_1</file>
+							<replacetexture>
+								<from>units\natives\lakota\bow_rider\bow_rider_1</from>
+								<to>War of the Triple Alliance\Units\Natives\Chola\CholaII</to>
+							</replacetexture>
+					</assetreference>
+					<attach a="hat" frombone="bone_hat" tobone="HEAD" syncanims="0"/>
+					<attach a="bag" frombone="bone_bag" tobone="R THIGH" syncanims="0"/>
+					</lowpoly>
+				</logic>
+			</championbowrider>
+		</logic>
+	</component>
+		<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_canter</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Jog
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_jog</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_gallop</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Highstep
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_highstep</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_A</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_B</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_C</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_D</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_F</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_G</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_H</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_I</file>
+			<weight>40</weight>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_bored_A</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_E</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_A</file>
+			<weight>50</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_idle_I</file>
+			<weight>50</weight>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Attack_melee
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\lance_attack_A</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\lance_attack_B</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\lance_attack_C</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\lance_attack_D</file>
+			<weight>10</weight>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Attack_trample
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\lance_trample_attack</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\lance_trample_attack</file>
+			<weight>40</weight>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Death_by_melee
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_deathA</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_deathB</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_deathC</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Death_by_range
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_deathA</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_deathB</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_deathC</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Death_by_havoc
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\rider_death_havoc_a</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\rider_death_havoc_b</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cheer
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_cheer_F</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_cheer_H</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_bored_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\sword_cheer_E</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="spear" frombone="bone_gun" tobone="bip01 prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Raze_idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_idle_A</file>
+			<weight>40</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_idle_B</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_idle_C</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_idle_D</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_idle_F</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_idle_G</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_idle_H</file>
+			<weight>10</weight>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_idle_I</file>
+			<weight>40</weight>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="torch" frombone="ATTACHPOINT" tobone="R HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Raze_attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_attack_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_attack_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_attack_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\cavalry\raze_attack_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="torch" frombone="ATTACHPOINT" tobone="R HAND" syncanims="0"/>
+	</anim>
+</animfile>

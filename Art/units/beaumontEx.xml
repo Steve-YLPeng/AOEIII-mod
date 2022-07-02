@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_hat</definebone>
+	<definebone>bone_sword</definebone>
+	<definebone>Bip01 Prop1</definebone>
+	<definebone>bone_ninja_dust</definebone>
+	<definebone>bone_ninja_blade</definebone>
+	<attachment>
+		torch
+		<include>effects\projectiles\torch.xml</include>
+	</attachment>
+	<attachment>
+		hammer
+		<component>
+			hammer
+			<assetreference type="GrannyModel">
+				<file>units\attachments\hammer_villager</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>hammer</component>
+		</anim>
+	</attachment>
+	<attachment>
+		knife
+		<component>
+			knife
+			<assetreference type="GrannyModel">
+				<file>units\attachments\knife_villager</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>knife</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ninja_knife
+		<component>
+			ninja_knife
+			<assetreference type="GrannyModel">
+				<file>units\mercenaries\ninja\ninja_knife</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>ninja_knife</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ninja_blade
+		<component>
+			ninja_blade
+			<assetreference type="GrannyModel">
+				<file>units\mercenaries\ninja\ninja_blade</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>ninja_blade</component>
+		</anim>
+	</attachment>
+	<attachment>
+		ninja_dust
+		<component>
+			ninja_dust
+			<notshadowcaster/>
+			<assetreference type="GrannyModel">
+				<file>units\mercenaries\ninja\ninja_dust</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>ninja_dust</component>
+		</anim>
+	</attachment>
+	<attachment>
+		LearySparkles
+		<component>
+			learysparkles
+			<assetreference type="ParticleSystem">
+				<file>effects\animal particles\leary_sparkles.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>learysparkles</component>
+		</anim>
+	</attachment>
+	<attachment>
+		LearyDust
+		<component>
+			learydust
+			<assetreference type="ParticleSystem">
+				<file>effects\animal particles\learydust.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>learydust</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>units\mercenaries\ninja\ninja</file>
+		</assetreference>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+			<selectedtexture>shadows_selections\selection_hero2_64x64</selectedtexture>
+			<noncinematictexture>shadows_selections\shadow_hero2_64x64</noncinematictexture>
+			<width>1.50</width>
+			<height>1.50</height>
+		</decal>
+		<attach a="LearySparkles" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="LearyDust" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</component>
+	<!-- stealth -->
+	<anim>
+		Cover_In
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\idle2coveridle</file>
+			<tag type="Particles" particlename="effects\smoke\ninjaSmoke.particle">0.50</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="bone_ninja_blade" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Cover_bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\cover_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\cover_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\cover_jog</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.06</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.53</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_jog
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\cover_jog</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.14</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.61</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_run
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\cover_run</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.14</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.61</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Cover_Out
+		<assetreference type="GrannyAnim">
+			<file>units\asians\consulate\ninja\ninja_cover_out</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.40</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="bone_ninja_blade" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<!-- stealth -->
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\native_atlatl_idle_a</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\human_bored_generic_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\human_bored_generic_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\walk_generic</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.14</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.61</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Jog
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\jog_generic</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.60</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.10</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Run
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\run_generic</file>
+			<tag type="FootstepLeft" footprinttype="HumanLeft">0.08</tag>
+			<tag type="FootstepRight" footprinttype="HumanRight">0.60</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Raze_Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\torch_throw_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="torch" frombone="ATTACHPOINT" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Raze_Attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\torch_throwA</file>
+			<tag type="Attack">0.61</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="TorchSwing">0.43</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\torch_throwB</file>
+			<tag type="Attack">0.56</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="TorchSwing">0.40</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="torch" frombone="ATTACHPOINT" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Cheer
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_B</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_C</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_D</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\cheer_E</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Look
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\look_down</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\look_left</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\look_right</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\look_up</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Salute
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\salute_rifleman_A</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Build
+		<assetreference type="GrannyAnim">
+			<file>animation_library\villager\villager_male_build1</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Build">0.36</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Build">0.66</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Build">1.00</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\villager\villager_male_build2</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Build">0.46</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Build">0.76</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Build">1.00</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="hammer" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+	</anim>
+	<anim>
+		Pickup
+		<assetreference type="GrannyAnim">
+			<file>animation_library\explorer\pickup_explorer_A</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="GatherFruit">0.35</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Recoil
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\recoil_A</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\recoil_C</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\recoil_E</file>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\shared\recoil_G</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		HandAttack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\natives\tomahawk\charge_melee_attackB</file>
+			<tag type="Attack">0.47</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.43</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\natives\tomahawk\volley_melee_attack</file>
+			<tag type="Attack">0.53</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.39</tag>
+		</assetreference>
+		<!-- ninja -->
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\attack1</file>
+			<tag type="Attack">0.19</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.16</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\attack2</file>
+			<tag type="Attack">0.34</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.31</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\attack3</file>
+			<tag type="Attack">0.35</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.29</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\attack4</file>
+			<tag type="Attack">0.21</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.18</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\attack5</file>
+			<tag type="Attack">0.39</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.41</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\mercs\ninja\attack6</file>
+			<tag type="Attack">0.32</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.32</tag>
+		</assetreference>
+		<!-- ninja -->
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+		
+		
+	</anim>
+	<anim>
+		RangedAttack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\natives\tomahawk\volley_ranged_attack</file>
+			<tag type="Attack">0.50</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Swoosh">0.37</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Reload
+		<assetreference type="GrannyAnim">
+			<file>animation_library\natives\tomahawk\volley_idle</file>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\death_standing_rifleman_A</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.52</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\death_standing_rifleman_B</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.19</tag>
+		</assetreference>
+		<assetreference type="GrannyAnim">
+			<file>animation_library\range\death_standing_rifleman_C</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.73</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="knife" frombone="MASTER" tobone="Bip01 Prop1" syncanims="0"/>
+		<attach a="ninja_knife" frombone="bone_ninja_dust" tobone="L HAND" syncanims="0"/>
+	</anim>
+	<anim>
+		Smokescreen
+		<assetreference type="GrannyAnim">
+			<file>units\asians\japanese\monk\monk_smokescreen</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="PowerSmokeBomb">0.96</tag>
+			<tag type="Particles" particlename="effects\smoke\smokescreen.particle">0.97</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Kagebunsin
+		<assetreference type="GrannyAnim">
+			<file>units\asians\japanese\monk\monk_smokescreen</file>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Kagebunsin">0.96</tag>
+			<tag type="Particles" particlename="effects\smoke\smokescreen.particle">0.97</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach a="bows" frombone="bone_bow" tobone="Bip01 Prop1" syncanims="0"/>
+	</anim>
+</animfile>

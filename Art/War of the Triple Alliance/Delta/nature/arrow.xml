@@ -1,0 +1,29 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<attachment>
+		trail
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<!-- <file>War of the Triple Alliance\Delta\nature\lazerbeam.particle</file> -->
+				<file>units\attachments\rapier.gr2</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<component>
+		mesh
+		<assetreference type="GrannyModel">
+			<file>effects\impacts\directional_arrow</file>
+		</assetreference>
+		<attach a="trail" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</component>
+	<anim>
+		Idle
+		<component>mesh</component>
+	</anim>
+</animfile>

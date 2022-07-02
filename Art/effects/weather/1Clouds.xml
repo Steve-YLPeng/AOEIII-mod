@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_01</definebone>
+	<attachment>
+		Emitter2
+		<component>
+			emitter2
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\1gc_clouds_medium1.particle</file>
+				<replacetexture>
+					<from>effects\invisible</from>
+					<to>effects\weather\cloud_06</to>
+				</replacetexture>
+			</assetreference>
+			<decal>
+				<effecttype>default</effecttype>
+				<texture isfakeshadow="1">shadows_selections\shadow_circle_32x32</texture>
+				<selectedtexture>shadows_selections\selection_circle_64x64</selectedtexture>
+				<width>5.00</width>
+				<height>5.00</height>
+			</decal>
+		</component>
+		<anim>
+			None
+			<component>emitter2</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Emitter3
+		<component>
+			emitter3
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\1lightning.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter3</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Emitter4
+		<component>
+			emitter4
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\1rainfall.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter4</component>
+		</anim>
+	</attachment>
+	<component>
+		mesh
+		<assetreference type="GrannyModel" shape="blarg">
+			<file>effects\impacts\directional_arrow</file>
+		</assetreference>
+		<attach a="Emitter3" frombone="bone_fallA_02" tobone="ATTACHPOINT" syncanims="0"/>
+	</component>
+	<anim>
+		Idle
+		<component>mesh</component>
+		<attach a="Emitter2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Emitter4" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</anim>
+</animfile>

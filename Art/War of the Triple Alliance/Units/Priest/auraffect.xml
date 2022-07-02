@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>Bone_rain</definebone>
+	<attachment>
+		rainbow_attachment_A
+		<component>
+			rainbow_particles
+			<assetreference type="ParticleSystem">
+				<file>War of the Triple Alliance\Units\Priest\holyglow.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>rainbow_particles</component>
+		</anim>
+	</attachment>
+	<attachment>
+		rainbow_attachment_B
+		<component>
+			rainbow_particles
+			<assetreference type="ParticleSystem">
+				<file>effects\explosions\exp_flash_small.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>rainbow_particles</component>
+		</anim>
+	</attachment>
+	<component>
+		rain
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>effects\impacts\directional_arrow</file>
+				</assetreference>
+				<attach a="rainbow_attachment_A" frombone="Attachpoint" tobone="Bone_rain" syncanims="0"/>
+				<attach a="rainbow_attachment_B" frombone="Attachpoint" tobone="Bone_rain" syncanims="0"/>
+			</data>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>rain</component>
+	</anim>
+</animfile>

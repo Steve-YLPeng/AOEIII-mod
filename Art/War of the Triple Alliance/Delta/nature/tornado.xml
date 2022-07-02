@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>Bone_rain</definebone>
+	<attachment>
+		glow1
+		<component>
+			rainbow_particles
+			<assetreference type="ParticleSystem">
+				<file>War of the Triple Alliance\Delta\nature\tornado.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>rainbow_particles</component>
+		</anim>
+	</attachment>
+	<attachment>
+		glow2
+		<component>
+			rainbow_particles
+			<assetreference type="ParticleSystem">
+				<file>War of the Triple Alliance\Delta\nature\tornado2.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>rainbow_particles</component>
+		</anim>
+	</attachment>
+	<attachment>
+		glow3
+		<component>
+			rainbow_particles
+			<assetreference type="ParticleSystem">
+				<file>War of the Triple Alliance\Delta\nature\tornadosnow.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>rainbow_particles</component>
+		</anim>
+	</attachment>
+	<attachment>
+		dirtRR
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>units\monster_truck\flyingDirt.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		blowingDust
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>units\monster_truck\blowingDust2.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		blowingDust2
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>units\monster_truck\blowingDust.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Dust
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>units\monster_truck\flyingDust.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<component>
+		rain
+		<logic type="Tech">
+			<none>
+				<assetreference type="GrannyModel">
+					<file>effects\impacts\directional_arrow</file>
+				</assetreference>
+				<attach a="glow1" frombone="Attachpoint" tobone="Bone_rain" syncanims="0"/>
+				<attach a="glow2" frombone="Attachpoint" tobone="Bone_rain" syncanims="0"/>
+				<attach a="Dust" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="blowingDust" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="blowingDust2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			</none>
+			<WOTTAmapissnow>
+				<assetreference type="GrannyModel">
+					<file>effects\impacts\directional_arrow</file>
+				</assetreference>
+				<attach a="glow3" frombone="Attachpoint" tobone="Bone_rain" syncanims="0"/>
+				<attach a="glow2" frombone="Attachpoint" tobone="Bone_rain" syncanims="0"/>
+				<attach a="Dust" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="blowingDust" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+				<attach a="blowingDust2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			</WOTTAmapissnow>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>rain</component>
+	</anim>
+</animfile>

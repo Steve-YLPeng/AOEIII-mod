@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_debris_1a</definebone>
+	<definebone>bone_debris_1b</definebone>
+	<definebone>bone_debris_1c</definebone>
+	<definebone>bone_debris_1d</definebone>
+	<definebone>bone_debris_1e</definebone>
+	<definebone>bone_debris_2a</definebone>
+	<definebone>bone_debris_2b</definebone>
+	<definebone>bone_debris_2c</definebone>
+	<definebone>bone_debris_3a</definebone>
+	<definebone>bone_debris_3b</definebone>
+	<submodel>
+		statue
+		<attachment>
+			base smoke
+			<component>
+				smoke base
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapsesmoke01.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke base</component>
+			</anim>
+		</attachment>	
+		<attachment>
+			collapse_smoke
+			<component>
+				collapse_smoke
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_a.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>collapse_smoke</component>
+			</anim>
+		</attachment>
+		<component>
+			ModelComp
+		<assetreference type="GrannyModel">
+			<file>War of the Triple Alliance\Buildingsets\Delta\Statues\lionstatue</file>
+		</assetreference>
+		<attach a="Korean_Statue2" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Korean_Statue3" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Korean_Statue4" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Korean_Statue5" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>	
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wonders\porcelain_tower\porcelain_tower_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.50</width>
+				<height>6.50</height>
+				<xoffset>0.00</xoffset>
+				<zoffset>0.00</zoffset>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>ModelComp</component>
+		</anim>
+		<anim>
+			Death
+			<component>ModelComp</component>
+			<attach a="base smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+			<attach a="collapse_smoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</anim>
+	</submodel>
+	<submodel>
+		statue_con1
+		<component>
+			base_con
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\2x2_stage1</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wonders\porcelain_tower\porcelain_tower_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.50</width>
+				<height>6.50</height>
+				<xoffset>0.00</xoffset>
+				<zoffset>0.00</zoffset>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>base_con</component>
+		</anim>
+	</submodel>
+	<submodel>
+		statue_con2
+		<component>
+			base_con
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\2x2_stage2</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wonders\porcelain_tower\porcelain_tower_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.50</width>
+				<height>6.50</height>
+				<xoffset>0.00</xoffset>
+				<zoffset>0.00</zoffset>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>base_con</component>
+		</anim>
+	</submodel>
+	<submodel>
+		statue_con3
+		<component>
+			base_con
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\2x2_stage3</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wonders\porcelain_tower\porcelain_tower_decal</texture>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>6.50</width>
+				<height>6.50</height>
+				<xoffset>0.00</xoffset>
+				<zoffset>0.00</zoffset>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>base_con</component>
+		</anim>
+	</submodel>
+	<component>
+		statue
+		<logic type="BuildingCompletion">
+			<p0>
+				<submodelref ref="statue_con1"/>
+			</p0>
+			<p33>
+				<submodelref ref="statue_con2"/>
+			</p33>
+			<p66>
+				<submodelref ref="statue_con3"/>
+			</p66>
+			<p100>
+				<submodelref ref="statue"/>
+			</p100>
+		</logic>
+	</component>
+</animfile>

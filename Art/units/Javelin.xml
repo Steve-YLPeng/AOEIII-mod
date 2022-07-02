@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<!-- <definebone>bip01_attach_rt</definebone>
+	<definebone>bone_sword</definebone> -->
+	<definebone>Javelin</definebone>
+	<attachment>
+		spear
+		<component>
+			spear
+			<assetreference type="GrannyModel">
+				<!-- <file>units\spc\lakota_chief\SPC_lakotachief_spear</file> -->
+				<file>3d_models\weapons\lance</file>
+				<replacetexture>
+					<from>3d_models\weapons\lance</from>
+					<to>3d_models\weapons\lance2</to>
+				</replacetexture>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>spear</component>
+		</anim>
+	</attachment>
+	<component>
+		Javelin
+		<logic type="Tech">
+			<none>
+				<assetreference type="GrannyModel">
+					<file>units\natives\aztec\eagle_knight\eagle_knight_atlatl</file>
+				</assetreference>
+				<attach a="spear" frombone="bone_sword" tobone="Javelin" syncanims="0"/>
+			</none>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>Javelin</component>
+	</anim>
+</animfile>

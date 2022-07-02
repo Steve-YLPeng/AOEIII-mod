@@ -1,0 +1,99 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>Bone01</definebone>
+	<attachment>
+		RiderAttachment
+		<include>War of the Triple Alliance\Delta\abilities\amazonia_tree.xml</include>
+	</attachment>
+	<component>
+		tree
+		<logic type="Inventory">
+			<p0>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Delta\African Animals\bases\30</file>
+				</assetreference>
+				<attach a="RiderAttachment" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+			</p0>
+			<p40>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Delta\African Animals\bases\40</file>
+				</assetreference>
+				<attach a="RiderAttachment" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+			</p40>
+			<p50>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Delta\African Animals\bases\50</file>
+				</assetreference>
+				<attach a="RiderAttachment" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+			</p50>
+			<p60>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Delta\African Animals\bases\60</file>
+				</assetreference>
+				<attach a="RiderAttachment" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+			</p60>
+			<p70>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Delta\African Animals\bases\70</file>
+				</assetreference>
+				<attach a="RiderAttachment" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+			</p70>
+			<p80>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Delta\African Animals\bases\80</file>
+				</assetreference>
+				<attach a="RiderAttachment" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+			</p80>
+			<p90>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Delta\African Animals\bases\90</file>
+				</assetreference>
+				<attach a="RiderAttachment" frombone="ATTACHPOINT" tobone="Bone01" syncanims="1"/>
+			</p90>
+			<p100>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Delta\African Animals\bases\100</file>
+				</assetreference>
+				<attach a="RiderAttachment" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="1"/>
+			</p100>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+			<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+			<width>1.0</width>
+			<height>1.0</height>
+		</decal>
+	</component>
+	<component>
+		Death
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Delta\African Animals\bases\100</file>
+				</assetreference>
+				<attach a="RiderAttachment" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="1"/>
+		<decal>
+			<effecttype>default</effecttype>
+			<texture isfakeshadow="1">shadows_selections\shadow_circle_64x64</texture>
+			<selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+			<width>1.0</width>
+			<height>1.0</height>
+		</decal>
+	</component>
+	<anim>
+		Idle
+		<component>tree</component>
+	</anim>
+	<anim>
+		Death
+		<component>death</component>
+	</anim>
+	<anim>
+		Recoil
+		<assetreference type="GrannyAnim">
+			<file>terrain\trees\tree_recoil</file>
+		</assetreference>
+		<component>tree</component>
+	</anim>
+
+</animfile>

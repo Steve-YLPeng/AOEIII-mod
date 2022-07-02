@@ -1,0 +1,287 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<definebone>bone_debris_1a</definebone>
+	<definebone>bone_debris_1b</definebone>
+	<definebone>bone_debris_1c</definebone>
+	<definebone>bone_debris_1d</definebone>
+	<definebone>bone_debris_1e</definebone>
+	<definebone>bone_debris_2a</definebone>
+	<definebone>bone_debris_2b</definebone>
+	<definebone>bone_debris_2c</definebone>
+	<definebone>bone_debris_3a</definebone>
+	<definebone>bone_debris_3b</definebone>
+	<definebone>bone_fire</definebone>
+	<submodel>
+		wood
+		<attachment>
+			collapseSmoke
+			<component>
+				smoke
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\collapse_smoke_wall.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				None
+				<component>smoke</component>
+			</anim>
+		</attachment>
+		<attachment>
+			noble_fire
+			<component>
+				emiter
+				<assetreference type="ParticleSystem">
+					<file>effects\fire\fire_torch_a.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				idle
+				<component>emiter</component>
+			</anim>
+		</attachment>
+		<attachment>
+			smoke
+			<component>
+				smoke_part
+				<assetreference type="ParticleSystem">
+					<file>effects\smoke\white_smoke_a.particle</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>smoke_part</component>
+			</anim>
+		</attachment>
+
+		<component>
+			woodTower
+
+					<logic type="Destruction">
+						<p1>
+							<assetreference type="GrannyModel" shape="wall_wood_corner">
+								<file>War of the Triple Alliance\Buildingsets\Delta\Statues\obelisk</file>
+							</assetreference>
+						</p1>
+						<p99>
+							<assetreference type="GrannyModel" shape="wall_wood_corner">
+								<file>War of the Triple Alliance\Buildingsets\Delta\Statues\obelisk</file>
+							</assetreference>
+						</p99>
+					</logic>
+			<attach a="noble_fire" frombone="ATTACHPOINT" tobone="bone_fire" syncanims="0"/>
+			<attach a="smoke" frombone="ATTACHPOINT" tobone="bone_fire" syncanims="0"/>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wall\wall_wood_stone_ground_small</texture>
+				<selectedtexture>shadows_selections\selection_square_64x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>3.50</width>
+				<height>3.50</height>
+				<xoffset>0.00</xoffset>
+				<zoffset>0.00</zoffset>
+			</decal>
+		</component>
+		<component>
+			woodTower_death
+
+					<assetreference type="GrannyModel">
+						<file>War of the Triple Alliance\Buildingsets\Delta\Statues\obelisk</file>
+					</assetreference>
+
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wall\wall_wood_stone_ground_small</texture>
+				<selectedtexture>shadows_selections\selection_square_64x64</selectedtexture>
+				<bumptexture>buildings\wall\wall_wood_stone_ground_small_bumpmap</bumptexture>
+				<width>3.00</width>
+				<height>3.00</height>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>woodTower</component>
+			<simskeleton>
+				<model>buildings\wall\wall_wooden_corner_damaged</model>
+				<damagetemplate>buildings\wall\wall_wooden_corner.dmg</damagetemplate>
+			</simskeleton>
+		</anim>
+		<anim>
+			Death
+			<assetreference type="GrannyAnim">
+				<file>buildings\wall\wall_wooden_corner_deathAnim_A</file>
+				<weight>10</weight>
+			</assetreference>
+			<assetreference type="GrannyAnim">
+				<file>buildings\wall\wall_wooden_corner_deathAnim_B</file>
+				<weight>10</weight>
+			</assetreference>
+			<component>woodTower_death</component>
+			<attach a="collapseSmoke" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</anim>
+	</submodel>
+	<submodel>
+		base_construction
+		<component>
+			base_con
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\wall_1x1a_con</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wall\wall_wood_stone_ground_small</texture>
+				<selectedtexture>shadows_selections\selection_square_64x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>3.50</width>
+				<height>3.50</height>
+				<xoffset>0.00</xoffset>
+				<zoffset>0.00</zoffset>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>base_con</component>
+		</anim>
+	</submodel>
+	<submodel>
+		mid_construction
+		<component>
+			mid_con
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\wall_1x1b_con</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wall\wall_wood_stone_ground_small</texture>
+				<selectedtexture>shadows_selections\selection_square_64x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>1.750</width>
+				<height>1.750</height>
+				<xoffset>0.00</xoffset>
+				<zoffset>0.00</zoffset>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>mid_con</component>
+		</anim>
+	</submodel>
+	<submodel>
+		wood_con1
+		<component>
+			base_con
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\wall_1x1a_con</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wall\wall_wood_stone_ground_small</texture>
+				<selectedtexture>shadows_selections\selection_square_64x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>3.50</width>
+				<height>3.50</height>
+				<xoffset>0.00</xoffset>
+				<zoffset>0.00</zoffset>
+			</decal>
+		</component>
+		<anim>
+			Idle
+			<component>base_con</component>
+		</anim>
+	</submodel>
+	<submodel>
+		wood_con2
+		<attachment>
+			con
+			<component>
+				scaffolding
+				<assetreference type="GrannyModel">
+					<file>buildings\wall\wall_tower_u1</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>scaffolding</component>
+			</anim>
+		</attachment>
+		<component>
+			base_con
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\wall_1x1a_con</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wall\wall_wood_stone_ground_small</texture>
+				<selectedtexture>shadows_selections\selection_square_64x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>3.50</width>
+				<height>3.50</height>
+				<xoffset>0.00</xoffset>
+				<zoffset>0.00</zoffset>
+			</decal>
+			<attach a="con" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</component>
+		<anim>
+			Idle
+			<component>base_con</component>
+		</anim>
+	</submodel>
+	<submodel>
+		wood_con3
+		<attachment>
+			con
+			<component>
+				scaffolding
+				<assetreference type="GrannyModel">
+					<file>buildings\wall\wall_tower_u1</file>
+				</assetreference>
+			</component>
+			<anim>
+				Idle
+				<component>scaffolding</component>
+			</anim>
+		</attachment>
+		<component>
+			base_con
+			<assetreference type="GrannyModel">
+				<file>buildings\constructions\wall_1x1a_con</file>
+			</assetreference>
+			<decal>
+				<effecttype>bump</effecttype>
+				<texture>buildings\wall\wall_wood_stone_ground_small</texture>
+				<selectedtexture>shadows_selections\selection_square_64x128</selectedtexture>
+				<bumptexture>shadows_selections\flat_normal_black_spec</bumptexture>
+				<width>3.50</width>
+				<height>3.50</height>
+				<xoffset>0.00</xoffset>
+				<zoffset>0.00</zoffset>
+			</decal>
+			<attach a="con" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		</component>
+		<anim>
+			Idle
+			<component>base_con</component>
+		</anim>
+	</submodel>
+	<component>
+		wall
+		<logic type="Tech">
+			<none>
+				<logic type="BuildingCompletion">
+					<p0>
+						<submodelref ref="wood_con1"/>
+					</p0>
+					<p33>
+						<submodelref ref="wood_con2"/>
+					</p33>
+					<p66>
+						<submodelref ref="wood_con3"/>
+					</p66>
+					<p100>
+						<submodelref ref="wood"/>
+					</p100>
+				</logic>
+			</none>
+		</logic>
+	</component>
+</animfile>

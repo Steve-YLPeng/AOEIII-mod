@@ -1,0 +1,24 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		props_colony
+		<logic type="Variation">
+			<data>
+				<assetreference type="GrannyModel">
+					<file>War of the Triple Alliance\Buildingsets\Delta\Statues\pyramid</file>
+				</assetreference>
+			</data>
+		</logic>
+			<decal>
+				<effecttype>default</effecttype>
+				<selectedtexture>shadows_selections\selection_square_128x128</selectedtexture>
+				<width>24.00</width>
+				<height>24.00</height>
+			</decal>
+	</component>
+	<anim>
+		Idle
+		<component>props_colony</component>
+	</anim>
+</animfile>

@@ -1,0 +1,1093 @@
+<?xml version="1.0" ?>
+<animfile>
+    <definebone>ATTACHPOINT</definebone>
+    <definebone>Attach_Bone</definebone>
+    <attachment>
+        model_0000
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\town_center\az\az_tc_1_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0001
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_1b_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0002
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\mercenaries\highlander\highlander</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0003
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\natives\iroquois\tomahawk_warrior\tomahawk_warrior_3_hat</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0004
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_2b_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0005
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\town_center\az\az_tc_2_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0006
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\artillery\iroquois_falconet\iroquois_falconet</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0007
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\asian_civs\market_indian\indian_market_age4_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0008
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_2b</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0009
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\spc\inca_outpost\spc_inca_outpost_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0010
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_2a</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0011
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\asian_civs\market_indian\indian_market_age1_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0012
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\asian_civs\trade_market\india\age_1\india_market_age1</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0013
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_4b_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0014
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_1a_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0015
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\bank\west\age 1\bank standin</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0016
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_4a_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0017
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_2c</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0018
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\spc\aztec_temple\spc_aztec_temple_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0019
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\props_colony\food_a_bucket</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0020
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\town_center\az\az_tc_2_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0021
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_1a_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0022
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\dock\dock_az_age4</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0023
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\priests\we_priest</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0024
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_2a_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0025
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\asian_civs\market_indian\indian_market_age2_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0026
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\asian_civs\trade_market\india\age_4\india_market_age4</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0027
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\spc\stuart_black\stuart_black_spc</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0028
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\town_center\az\az_tc_4_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0029
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\natives\lp_sharktooth_bow</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0030
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_2b_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0031
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_1c</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0032
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\town_center\az\az_tc_4</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0033
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\town_center\az\az_tc_1</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0034
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\spc\inca_outpost\spc_inca_outpost_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0035
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_4b</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0036
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\asian_civs\market_indian\indian_market_age1_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0037
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\fort\med_fort</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0038
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_4a_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0039
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\asian_civs\market_indian\indian_market_age2_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0040
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\natives\native_oldman</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0041
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_2c_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0042
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\spc\inca_outpost\spc_inca_outpost</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0043
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\town_center\az\az_tc_4_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0044
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_1c_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0045
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_4c</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0046
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\cavalry\spahi\spahi_mace_3</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0047
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_2c_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0048
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_4c_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0049
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\priests\we_priest_heal_model</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0050
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\spc\aztec_temple\spc_aztec_temple</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0051
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\asian_civs\trade_market\india\age_2\india_market_age2</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0052
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\fort\med_fort_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0053
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\town_center\az\az_tc_2</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0054
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_1a</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0055
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_4c_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0056
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\natives\ally\zapotec_lightning_warrior\zapotec_lightning_warrior_shield</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0057
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\spc\aztec_temple\spc_aztec_temple_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0058
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_1b_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0059
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\natives\cree_tracker</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0060
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\dock\az_dock_age4_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0061
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\town_center\az\az_tc_1_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0062
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\natives\iroquois\axe_rider\axe_rider_2</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0063
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_4a</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0064
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\dock\az_dock_age4_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0065
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\asians\spc\huang\spc_huang</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0066
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\asian_civs\market_indian\indian_market_age4_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0067
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\fort\med_fort_damaged</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0068
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_2a_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0069
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_4b_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0070
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\props_colony\food_b_bucket</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0071
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_1b</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0072
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\natives\lakota\club_warrior\club_warrior_1</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0073
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\props_colony\food_c_bucket</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0074
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>buildings\native_civs\house\az\az_house_1c_deathmodel</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0075
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\asians\japanese\morutaru\morataru_cannon_0</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <attachment>
+        model_0076
+        <component>
+            model
+            <assetreference type="GrannyModel">
+                <file>units\natives\iroquois\axe_rider\axe_rider_3_horse</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>model</component>
+        </anim>
+    </attachment>
+    <component>
+        ModelComp
+        <assetreference type="GrannyModel">
+            <file>replace_texture\Anti_lag_bone</file>
+        </assetreference>
+        <attach a="model_0000" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0001" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0002" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0003" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0004" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0005" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0006" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0007" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0008" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0009" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0010" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0011" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0012" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0013" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0014" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0015" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0016" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0017" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0018" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0019" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0020" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0021" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0022" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0023" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0024" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0025" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0026" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0027" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0028" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0029" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0030" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0031" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0032" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0033" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0034" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0035" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0036" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0037" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0038" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0039" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0040" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0041" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0042" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0043" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0044" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0045" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0046" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0047" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0048" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0049" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0050" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0051" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0052" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0053" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0054" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0055" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0056" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0057" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0058" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0059" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0060" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0061" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0062" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0063" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0064" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0065" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0066" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0067" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0068" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0069" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0070" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0071" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0072" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0073" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0074" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0075" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+        <attach a="model_0076" frombone="ATTACHPOINT" syncanims="0" tobone="Attach_Bone"/>
+    </component>
+    <anim>
+        Idle
+        <component>ModelComp</component>
+    </anim>
+</animfile>

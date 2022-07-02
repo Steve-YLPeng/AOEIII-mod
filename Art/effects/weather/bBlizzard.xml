@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_main</definebone>
+	<attachment>
+		Exp_fireball_1a
+		<component>
+			Exp_Fireball1a
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\blowing_snow_ground_2.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>Exp_Fireball1a</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Exp_Fireball1b
+		<component>
+			Exp_Fireball1b
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\BlizzardSnow.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>Exp_Fireball1b</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Exp_Fireball1c
+		<component>
+			Exp_Fireball1c
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\blowing_snow_mountain.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>Exp_Fireball1c</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Exp_Fireball1d
+		<component>
+			Exp_Fireball1d
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\blowing_ground_snow.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>Exp_Fireball1d</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Exp_Fireball
+		<component>
+			Exp_Fireball
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\blowing_snow_trees.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>Exp_Fireball</component>
+		</anim>
+	</attachment>
+	<attachment>
+		Exp_Flash
+		<component>
+			Exp_Flash
+			<assetreference type="ParticleSystem">
+				<file>effects\weather\snow.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>Exp_Flash</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>
+				<file>effects\impacts\directional_arrow</file>
+			</file>
+		</assetreference>
+	</component>
+	<anim>
+		Idle
+		<component>ModelComp</component>
+		<attach a="Exp_Fireball1d" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Exp_Fireball1c" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Exp_Fireball1b" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Exp_fireball_1a" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="waterspray_vert" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="lowsmoke" frombone="ATTACHPOINT" tobone="bone_main" syncanims="0"/>
+		<attach a="smokeColumn" frombone="ATTACHPOINT" tobone="bone_main" syncanims="0"/>
+		<attach a="wooddebris" frombone="ATTACHPOINT" tobone="bone_main" syncanims="0"/>
+		<attach a="shockwave" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="fireStreamers" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Exp_Flash" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="sparks" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="Exp_FireballBlack" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="BigSparks" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+		<attach a="shockwaveSlow" frombone="ATTACHPOINT" tobone="ATTACHPOINT" syncanims="0"/>
+	</anim>
+</animfile>

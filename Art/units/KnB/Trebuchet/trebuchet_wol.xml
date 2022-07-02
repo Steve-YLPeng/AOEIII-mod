@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+    <definebone>bone_wheel03</definebone>
+    <definebone>bone_wheel04</definebone>
+    <definebone>bone_wagon</definebone>
+    <definebone>bone01</definebone>
+    <definebone>bone02</definebone>
+    <definebone>bone03</definebone>
+    <definebone>bone04</definebone>
+    <definebone>bone05</definebone>
+    <attachment>
+        treb1
+        <component>
+            blockhouse
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\treb_wagon_attachment</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>blockhouse</component>
+        </anim>
+    </attachment>
+    <attachment>
+        skeleton
+        <include>Trebuchet\wagon\treb_attachment.xml</include>
+    </attachment>
+    <attachment>
+        yoke
+        <include>units\trade\supply_cart\supply_cart_yoke.xml</include>
+    </attachment>
+    <attachment>
+        treb_death
+        <component>
+            ModelComp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\trebuchet_destruction</file>
+                <replacetexture>
+                    <from>seige_equipment_texture</from>
+                    <to>units\KnB\trebuchet\trebuchet_destruction</to>
+                </replacetexture>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+        <anim>
+            Bombard_Death
+            <assetreference type="GrannyAnim">
+                <file>units\KnB\Trebuchet\trebuchet_destruction</file>
+            </assetreference>
+            <component>ModelComp</component>
+         </anim>
+    </attachment>
+    <attachment>
+        skeleton
+        <include>units\KnB\Trebuchet\trebuchet_main_wol.xml</include>
+    </attachment>
+    <attachment>
+        treb2
+        <component>
+            ModelComp
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\treb_base</file>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>ModelComp</component>
+        </anim>
+    </attachment>
+    <attachment>
+        treb3
+        <component>
+            blockhouse
+            <assetreference type="GrannyModel">
+                <file>units\KnB\Trebuchet\trebuchet_packed_04</file>
+                <replacetexture>
+                    <from>trebuchet</from>
+                    <to>units\KnB\trebuchet\trebuchet</to>
+                </replacetexture>
+            </assetreference>
+        </component>
+        <anim>
+            Idle
+            <component>blockhouse</component>
+        </anim>
+    </attachment>
+    <attachment>
+        skeleton_unpacked
+        <include>units\KnB\Trebuchet\trebuchet_main_wol.xml</include>
+    </attachment>
+    <component>
+        Trebuchet_Packed
+        <linksection>
+            <linkoffset>0</linkoffset>
+            <linkcomponent>axel</linkcomponent>
+            <linkconstraint>0</linkconstraint>
+        </linksection>
+        <assetreference type="GrannyModel">
+            <file>units\trade\supply_cart\supply_cart_wood</file>
+        </assetreference>
+        <decal>
+            <effecttype>default</effecttype>
+            <texture>shadows_selections\shadow_circle_128x128</texture>
+            <selectedtexture>shadows_selections\selection_oval_32x64</selectedtexture>
+            <width>2.00</width>
+            <height>4.00</height>
+        </decal>
+        <attach a="yoke" frombone="MASTER" tobone="MASTER" syncanims="1" />
+        <attach a="treb1" frombone="MASTER" tobone="bone_wagon" syncanims="1" />
+    </component>
+    <component>
+        Trebuchet_Unpacked
+        <assetreference type="GrannyModel">
+            <file>units\KnB\Trebuchet\pos</file>
+        </assetreference>
+        <attach a="skeleton_unpacked" frombone="bone05" tobone="Bone03" syncanims="1" />
+        <attach a="treb2" frombone="bone05" tobone="Bone03" syncanims="0" />
+    </component>
+    <component>
+        Trebuchet_Building
+        <assetreference type="GrannyModel">
+            <file>units\KnB\Trebuchet\pos</file>
+        </assetreference>
+        <attach a="treb3" frombone="no existing bone" tobone="Bone04" syncanims="0" />
+    </component>
+    <component>
+        Trebuchet_Death
+        <assetreference type="GrannyModel">
+            <file>units\KnB\Trebuchet\pos</file>
+        </assetreference>
+        <attach a="treb_death" frombone="no existing bone" tobone="Bone04" syncanims="1" />
+    </component>
+    <anim>
+        Idle
+        <assetreference type="GrannyAnim">
+            <file>units\trade\supply_cart\supply_cart_idle</file>
+        </assetreference>
+        <component>Trebuchet_Packed</component>
+    </anim>
+    <anim>
+        Walk
+        <assetreference type="GrannyAnim">
+            <file>units\trade\supply_cart\supply_cart_walk</file>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof1">0.14</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof2">0.26</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof3">0.38</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof4">0.51</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof1">0.64</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof2">0.77</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof3">0.90</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="HorseHoof4">0.03</tag>
+        </assetreference>
+        <component>Trebuchet_Packed</component>
+    </anim>
+    <anim>
+        Death
+        <assetreference type="GrannyAnim">
+            <file>animation_library\wagon\wagon_death</file>
+            <tag type="SpecificSoundSet" checkvisible="1" set="RagdollImpact">0.50</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="CartBreak">0.03</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="Thud">0.04</tag>
+        </assetreference>
+        <component>Trebuchet_Packed</component>
+    </anim>
+    <anim>
+		Limber
+		<component>Trebuchet_Building</component>
+	</anim>
+	<anim>
+		Unlimber
+		<component>Trebuchet_Building</component>
+	</anim>
+    <anim>
+        Bombard_ranged_Idle
+        <component>Trebuchet_Unpacked</component>
+    </anim>
+    <anim>
+        Bombard_Reload
+        <component>Trebuchet_Unpacked</component>
+    </anim>
+    <anim>
+        Bombard_ranged_attack
+        <assetreference type="GrannyAnim">
+            <file>units\KnB\Trebuchet\trebuchet_shooting</file>
+            <tag type="Attack">0.84</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.02</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.24</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="Catapultloads">0.50</tag>
+            <tag type="SpecificSoundSet" checkvisible="1" set="Catapultattacks">0.82</tag>
+        </assetreference>
+        <component>Trebuchet_Unpacked</component>
+    </anim>
+    <anim>
+        Bombard_Death
+        <assetreference type="GrannyAnim">
+            <file>units\KnB\Trebuchet\trebuchet_destruction</file>
+        </assetreference>
+        <component>Trebuchet_Death</component>
+    </anim>
+</animfile>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<component>
+		shield
+		<logic type="Tech">
+			<none>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>units\natives\attachment_bola_shield</file>
+							<replacetexture>
+								<from>units\natives\bola</from>
+								<to>units\Saber\bola1</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+					<lowpoly/>
+				</logic>
+			</none>
+			<VeteranSaber>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>units\natives\attachment_bola_shield</file>
+							<replacetexture>
+								<from>units\natives\bola</from>
+								<to>units\Saber\bola2</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+					<lowpoly/>
+				</logic>
+			</VeteranSaber>
+			<GuardSaber>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>units\natives\attachment_bola_shield</file>
+							<replacetexture>
+								<from>units\natives\bola</from>
+								<to>units\Saber\bola3</to>
+							</replacetexture>
+						</assetreference>
+					</normal>
+					<lowpoly/>
+				</logic>
+			</GuardSaber>
+		</logic>
+	</component>
+	<anim>
+		Idle
+		<component>shield</component>
+	</anim>
+</animfile>

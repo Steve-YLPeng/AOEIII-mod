@@ -1,0 +1,56 @@
+<!-- converted from XMB to XML -->
+
+<impacteffect metercount="4" meterlength="1.0">
+	<wood>
+		<particleset>quake</particleset>
+
+
+	</wood>
+	<stone>
+		<particleset>quake</particleset>
+
+
+	</stone>
+	<flesh>
+		<particleset>quake</particleset>
+
+	</flesh>
+	<dirt>
+		<particleset>quake</particleset>
+
+	</dirt>
+	<snow>
+		<particleset>quake</particleset>
+
+	</snow>
+	<animal>
+		<particleset>quake</particleset>
+
+
+	</animal>
+	<terraingrass>
+		<particleset>quake</particleset>
+
+	</terraingrass>
+	<terrainwater>
+
+
+	</terrainwater>
+	<terraindirt>
+		<particleset>quake</particleset>
+
+	</terraindirt>
+	<terrainstone>
+		<particleset>quake</particleset>
+
+
+	</terrainstone>
+	<terrainsnow>
+		<particleset>quake</particleset>
+
+	</terrainsnow>
+	<terrainsand>
+		<particleset>quake</particleset>
+
+	</terrainsand>
+</impacteffect>

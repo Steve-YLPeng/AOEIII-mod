@@ -1,0 +1,116 @@
+<!-- converted from XMB to XML -->
+
+<animfile>
+	<component>
+		ModelComp
+		<logic type="Variation">
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file>units\animals\macaw\macawgreen</file>
+								<replacetexture>
+									<from>units\animals\macaw\macaw03</from>
+									<to>units\animals\macaw\macaw04</to>
+								</replacetexture>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\shadow_circle_32x32</selectedtexture>
+			<width>1.00</width>
+			<height>1.00</height>
+		</decal>
+	</component>
+	<component>
+		dead
+		<logic type="Variation">
+			<data>
+				<logic type="LowPoly">
+					<normal>
+						<assetreference type="GrannyModel">
+							<file></file>
+						</assetreference>
+					</normal>
+				</logic>
+			</data>
+		</logic>
+		<decal>
+			<effecttype>default</effecttype>
+			<selectedtexture>shadows_selections\shadow_circle_32x32</selectedtexture>
+			<width>1.00</width>
+			<height>1.00</height>
+		</decal>
+	</component>
+	<anim>
+		Bombard_ranged_attack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\air\macaw_walkA</file>
+			<tag type="Attack">0.70</tag>
+			<tag type="SpecificSoundSet" set="FlameThrower" checkvisible="1">0.00</tag>
+			<tag type="Particles" particlename="flamethrowerEX">0.10</tag>
+			<tag type="Particles" particlename="flamethrowerEX">0.20</tag>
+			<tag type="Particles" particlename="flamethrowerEX">0.30</tag>
+			<tag type="Particles" particlename="flamethrowerEX">0.40</tag>
+			<tag type="Particles" particlename="flamethrowerEX">0.50</tag>
+			<tag type="Particles" particlename="flamethrowerEX">0.60</tag>
+			<tag type="Particles" particlename="flamethrowerEX">0.70</tag>
+			<tag type="Particles" particlename="flamethrowerEX">0.80</tag>
+			<tag type="Particles" particlename="flamethrowerEX">0.90</tag>
+			<tag type="Particles" particlename="flamethrowerEX">1.00</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Walk
+		<assetreference type="GrannyAnim">
+			<file>animation_library\air\macaw_walkA</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Idle
+		<assetreference type="GrannyAnim">
+			<file>animation_library\air\macaw_walkA</file>
+			
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		Death
+		<assetreference type="GrannyAnim">
+			<file></file>
+		</assetreference>
+		<component>dead</component>
+	</anim>
+	<anim>
+		Bored
+		<assetreference type="GrannyAnim">
+			<file>animation_library\air\macaw_walkA</file>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		RangedAttack
+		<assetreference type="GrannyAnim">
+			<file>animation_library\air\macaw_walkA</file>
+			<tag type="Attack">0.25</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Arrows">0.25</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+	<anim>
+		RangedAttack2
+		<assetreference type="GrannyAnim">
+			<file>animation_library\air\macaw_walkA</file>
+			<tag type="Attack">0.25</tag>
+			<tag type="Attack">0.50</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Arrows">0.25</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="Arrows">0.50</tag>
+		</assetreference>
+		<component>ModelComp</component>
+	</anim>
+</animfile>

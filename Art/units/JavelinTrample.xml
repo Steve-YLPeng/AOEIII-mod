@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animfile>
+	<definebone>bone_attachpoint</definebone>
+	<definebone>bone_arrow_flame</definebone>
+	<attachment>
+		fire
+		<component>
+			fire emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\fire\fire_torch_a.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>fire emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		attachment_cannon_ball_trail
+		<component>
+			cannon_ball_trail
+			<assetreference type="ParticleSystem">
+				<file>effects\projectiles\cannon_ball_trail.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>cannon_ball_trail</component>
+		</anim>
+	</attachment>
+	<attachment>
+		streamer
+		<component>
+			trail emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\projectiles\flamingArrow_trail.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			Idle
+			<component>trail emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		muzzleFlash
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\projectiles\lazerMuzzle.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<attachment>
+		godRaysLeft
+		<component>
+			emitter
+			<assetreference type="ParticleSystem">
+				<file>effects\projectiles\lazerGodRays_left.particle</file>
+			</assetreference>
+		</component>
+		<anim>
+			None
+			<component>emitter</component>
+		</anim>
+	</attachment>
+	<component>
+		ModelComp
+		<assetreference type="GrannyModel">
+			<file>effects\projectiles\flamingArrow</file>
+		</assetreference>
+	</component>
+	<anim>
+		Idle
+		<component>ModelComp</component>
+		<!-- <attach a="fire" frombone="bone_arrow_flame" tobone="bone_arrow_flame" syncanims="0"/> -->
+		<attach a="muzzleFlash" frombone="ATTACHPOINT" tobone="bone_attachpoint" syncanims="0"/>
+		<attach a="godRaysLeft" frombone="ATTACHPOINT" tobone="bone_attachpoint" syncanims="0"/>
+		<attach a="attachment_cannon_ball_trail" frombone="ATTACHPOINT" tobone="bone_attachpoint" syncanims="0"/>
+		<attach a="streamer" frombone="boneFire" tobone="bone_arrow_flame" syncanims="0"/>
+	</anim>
+</animfile>
